@@ -32,8 +32,8 @@
 | `README.md` | `[COLAR LINK DA TAG sprint-01]` | Documentação inicial do projeto, identificação da solução e instruções gerais. |
 | `docs/visao-geral.md` | `[COLAR LINK DA TAG sprint-01]` | Definição do problema, público, stakeholders, proposta de valor, objetivos e escopo inicial. |
 | `docs/backlog-produto.md` | `[COLAR LINK DA TAG sprint-01]` | Organização e documentação do Product Backlog inicial. |
-| GitHub Project | `[COLAR LINK DO PROJECT]` | Organização operacional das Issues, prioridades, responsáveis, sprints e status. |
-| Issues do backlog | `[COLAR LINK DAS ISSUES]` | Registro dos dez itens iniciais do Product Backlog com critérios de aceitação. |
+| GitHub Project | https://github.com/users/lucasensousa/projects/2 | Organização operacional das Issues, prioridades, responsáveis, sprints e status. |
+| Issues do backlog | https://github.com/lucasensousa/coleta-mais/issues | Registro dos dez itens iniciais do Product Backlog com critérios de aceitação. |
 
 
 ## 4. Incremento da aplicação web — 0,75 ponto
@@ -60,7 +60,8 @@ Abrir o arquivo src/index.html em um navegador.
 
 | Requisito/Issue | Código ou protótipo | Evidência de execução |
 |---|---|---|
-| `RF-XX / #XX` | `[link]` | `[link]` |
+| T-01 / #6 | Estrutura inicial em src/ | https://github.com/lucasensousa/coleta-mais/commit/300a34feb63b3d86293f6d61314ca58170f25e7d |
+| T-02 / #7 | Página inicial do Coleta+ | https://github.com/lucasensousa/coleta-mais/commit/300a34feb63b3d86293f6d61314ca58170f25e7d | 
 
 ## 5. Scrum e gestão do trabalho — 0,50 ponto
 
@@ -68,44 +69,55 @@ Abrir o arquivo src/index.html em um navegador.
 
 | Issue | Descrição | Responsável | Critério de aceitação/conclusão | Situação |
 |---|---|---|---|---|
-| `#XX` | `[PREENCHER]` | `@usuario` | `[PREENCHER]` | Concluída/Pendente |
+| #8 — D-01 | Documentar a visão geral do produto | @lucasensousa | `docs/visao-geral.md` deve registrar problema, público, stakeholders, proposta de valor, objetivos e escopo inicial. | Concluída |
+| #9 — D-02 | Organizar e documentar o Product Backlog | @lucasensousa | O Product Backlog deve possuir pelo menos dez itens e estar documentado e relacionado ao GitHub Project. | Concluída |
+| #10 — D-03 | Registrar planejamento e acompanhamento da Sprint 1 | @lucasensousa | Este arquivo deve registrar o objetivo, Sprint Backlog, acompanhamento, evidências, revisão e retrospectiva da Sprint. | Concluída |
+| #6 — T-01 | Criar estrutura inicial da aplicação web | @AnthonyJSilva03 | Deve existir uma estrutura inicial em src/ que possa ser executada e verificada. | Concluída |
+| #7 — T-02 | Criar página inicial do Coleta+ | @AnthonyJSilva03 | Deve existir uma página inicial acessível no navegador via localhost, apresentando o nome e a proposta inicial do Coleta+. | Concluída |
+
 
 ### Acompanhamento
 
-- **GitHub Project:** `[link filtrado ou visão da sprint]`
-- **Reuniões/decisões:** `[links para docs/reunioes/]`
-- **Impedimentos:** `[PREENCHER ou Nenhum]`
-- **Mudanças de escopo:** `[PREENCHER ou Nenhuma]`
+- **GitHub Project:** (https://github.com/users/lucasensousa/projects/2)
+- **Reuniões/decisões:** (https://meet.google.com/jgm-djwy-xhw?pli=1)
+- **Impedimentos:** Nenhum
+- **Mudanças de escopo:** Nenhuma
 
 ## 6. GitHub, documentação e rastreabilidade — 0,50 ponto
 
 | Tipo de evidência | Link | O que comprova |
 |---|---|---|
-| Issue | `[link]` | `[PREENCHER]` |
-| Pull Request | `[link]` | `[PREENCHER]` |
-| Commit | `[link]` | `[PREENCHER]` |
-| Código/arquivo | `[link]` | `[PREENCHER]` |
-| Teste/captura/relatório | `[link]` | `[PREENCHER]` |
+| Issue | https://github.com/lucasensousa/coleta-mais/issues | Registro dos itens do Product Backlog e dos critérios de aceitação. |
+| Pull Request | https://github.com/lucasensousa/coleta-mais/pull/13 | Revisão e integração das alterações realizadas pela equipe. |
+| Commit | https://github.com/lucasensousa/coleta-mais/commit/300a34feb63b3d86293f6d61314ca58170f25e7d | Histórico das alterações realizadas no projeto. |
+| Código/arquivo | https://github.com/lucasensousa/coleta-mais/tree/main/src | Estrutura inicial e página executável da aplicação. |
+| Teste/captura/relatório | Protótipo inicial não possui validação | Demonstração da execução ou validação do incremento. |
 
 ### Rastreabilidade resumida
 
-| Requisito | Issue | Artefato/modelo/decisão | Código | Teste/evidência |
-|---|---|---|---|---|
-| `RF-XX` | `#XX` | `[link]` | `[link]` | `[link ou ainda não aplicável]` |
+| Requisito/Issue | Artefato/modelo/decisão | Código | Teste/evidência |
+|---|---|---|---|
+| `D-01 / #8` | `docs/visao-geral.md` | Não aplicável | Não aplicável |
+| `D-02 / #9` | `docs/backlog-produto.md` e GitHub Project | Não aplicável | Não aplicável |
+| `D-03 / #10` | `docs/sprints/sprint-01.md` | Não aplicável | Não aplicável |
+| `T-01 / #6` | Estrutura inicial da aplicação web | `src/` | Não aplicável |
+| `T-02 / #7` | Página inicial do Coleta+ | `src/index.html` e `src/style.css` | Não aplicável |
+
+> Os requisitos funcionais formais (`RF-XX`) ainda não foram definidos na Sprint 1. As Issues desta sprint são relacionadas diretamente aos artefatos e atividades correspondentes. A relação entre histórias de usuário e requisitos funcionais será estabelecida durante o refinamento da Sprint 2.
 
 ## 7. Revisão do incremento
 
-- **O que foi demonstrado:** `[PREENCHER]`
-- **Critérios atendidos:** `[PREENCHER]`
-- **Itens não concluídos:** `[PREENCHER]`
-- **Motivo das pendências:** `[PREENCHER]`
-- **Feedback recebido e ajustes:** `[PREENCHER]`
+- **O que foi demonstrado:** A definição e construção do problema com a página inicial.
+- **Critérios atendidos:** Escopo inicial atendido.
+- **Itens não concluídos:** Funcionalidade do sistema.
+- **Motivo das pendências:** Sprint inicial.
+- **Feedback recebido e ajustes:** Nenhum.
 
 ## 8. Retrospectiva e próxima sprint
 
-- **Funcionou bem:** `[PREENCHER]`
-- **Precisa melhorar:** `[PREENCHER]`
-- **Ação concreta para a próxima sprint:** `[PREENCHER]`
+- **Funcionou bem:** Sim, atendendo os requisitos esperados.
+- **Precisa melhorar:** Sim, refinar os scripts com as novas funcionalidades.
+- **Ação concreta para a próxima sprint:** Implentação das funcionalidades.
 
 ## 9. O que não será considerado suficiente
 
