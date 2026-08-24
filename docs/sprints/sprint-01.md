@@ -29,9 +29,9 @@
 
 | Artefato criado/atualizado | Link na tag da sprint | O que mudou |
 |---|---|---|
-| `README.md` | `[COLAR LINK DA TAG sprint-01]` | Documentação inicial do projeto, identificação da solução e instruções gerais. |
-| `docs/visao-geral.md` | `[COLAR LINK DA TAG sprint-01]` | Definição do problema, público, stakeholders, proposta de valor, objetivos e escopo inicial. |
-| `docs/backlog-produto.md` | `[COLAR LINK DA TAG sprint-01]` | Organização e documentação do Product Backlog inicial. |
+| `README.md` | https://github.com/lucasensousa/coleta-mais/releases/tag/sprint-01 | Documentação inicial do projeto, identificação da solução e instruções gerais. |
+| `docs/visao-geral.md` | https://github.com/lucasensousa/coleta-mais/releases/tag/sprint-01 | Definição do problema, público, stakeholders, proposta de valor, objetivos e escopo inicial. |
+| `docs/backlog-produto.md` | https://github.com/lucasensousa/coleta-mais/releases/tag/sprint-01 | Organização e documentação do Product Backlog inicial. |
 | GitHub Project | https://github.com/users/lucasensousa/projects/2 | Organização operacional das Issues, prioridades, responsáveis, sprints e status. |
 | Issues do backlog | https://github.com/lucasensousa/coleta-mais/issues | Registro dos dez itens iniciais do Product Backlog com critérios de aceitação. |
 
@@ -127,6 +127,6 @@ Abrir o arquivo src/index.html em um navegador.
 
 ## 10. Links enviados no UFLA Virtual
 
-- **Tag `sprint-01`:** `[COLAR LINK]`
-- **Este arquivo na tag:** `[COLAR LINK]`
-- **Observação adicional:** `[quando necessária]`
+- **Tag `sprint-01`:** (https://github.com/lucasensousa/coleta-mais/releases/tag/sprint-01)
+- **Este arquivo na tag:** https://github.com/lucasensousa/coleta-mais/archive/refs/tags/sprint-01.zip
+- **Observação adicional:** Sem observação.
