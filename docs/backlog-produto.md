@@ -41,28 +41,29 @@ As funcionalidades destinadas ao usuário final foram mantidas no Product Backlo
 
 | ID | Link da Issue | Tipo | Descrição curta | Prioridade | Requisito | Sprint | Estado |
 |---|---|---|---|---|---|---|---|
-| `US-01` | `#1` | Funcionalidade | Consultar pontos de coleta de lixo eletrônico em Lavras | Alta | A definir na Sprint 2 | 2 | A fazer |
-| `US-02` | `#2` | Funcionalidade | Consultar materiais aceitos em cada ponto de coleta | Alta | A definir na Sprint 2 | 2 | A fazer |
-| `US-03` | `#3` | Funcionalidade | Consultar horário de funcionamento dos pontos de coleta | Média | A definir na Sprint 2 | 2 | A fazer |
-| `US-04` | `#4` | Funcionalidade | Consultar condições de entrega dos materiais | Média | A definir na Sprint 2 | 2 | A fazer |
-| `US-05` | `#5` | Funcionalidade | Visualizar localização dos pontos de coleta | Alta | A definir na Sprint 2 | 2 | A fazer |
-| `T-01` | `#6` | Tarefa | Criar estrutura inicial da aplicação web | Alta | Não aplicável | 1 | A fazer |
-| `T-02` | `#7` | Tarefa | Criar página inicial do Coleta+ | Média | Não aplicável | 1 | A fazer |
-| `D-01` | `#8` | Documentação | Documentar a visão geral do produto | Alta | Não aplicável | 1 | A fazer |
-| `D-02` | `#9` | Documentação | Organizar e documentar o Product Backlog | Alta | Não aplicável | 1 | A fazer |
-| `D-03` | `#10` | Documentação | Registrar planejamento e acompanhamento da Sprint 1 | Alta | Não aplicável | 1 | A fazer |
-
-### Itens selecionados para a Sprint 1
-
-O Sprint Backlog da Sprint 1 é composto pelos seguintes itens:
-
-- `D-01` — Documentar a visão geral do produto;
-- `D-02` — Organizar e documentar o Product Backlog;
-- `D-03` — Registrar planejamento e acompanhamento da Sprint 1;
-- `T-01` — Criar estrutura inicial da aplicação web;
-- `T-02` — Criar página inicial do Coleta+.
-
-As Issues `US-01` a `US-05` permanecem no Product Backlog e estão planejadas para a Sprint 2, quando serão refinadas e relacionadas aos requisitos funcionais e não funcionais do sistema.
+| `US-01` | `#1` | Funcionalidade | Consultar pontos de coleta de lixo eletrônico em Lavras | Alta | `RF-01` | 2 | A fazer |
+| `US-02` | `#2` | Funcionalidade | Consultar materiais aceitos em cada ponto de coleta | Alta | `RF-02` | 2 | A fazer |
+| `US-03` | `#3` | Funcionalidade | Consultar horário de funcionamento dos pontos de coleta | Média | `RF-03` | 2 | A fazer |
+| `US-04` | `#4` | Funcionalidade | Consultar condições de entrega dos materiais | Média | `RF-04` | 2 | A fazer |
+| `US-05` | `#5` | Funcionalidade | Visualizar localização dos pontos de coleta | Alta | `RF-05` | 2 | A fazer |
+| `T-01` | `#11` | Tarefa | Criar estrutura inicial da aplicação web | Alta | Não aplicável | 1 | Concluído |
+| `T-02` | `#12` | Tarefa | Criar página inicial do Coleta+ | Média | Não aplicável | 1 | A fazer |
+| `D-01` | `#8` | Documentação | Documentar a visão geral do produto | Alta | Não aplicável | 1 | Concluído |
+| `D-02` | `#9` | Documentação | Organizar e documentar o Product Backlog | Alta | Não aplicável | 1 | Concluído |
+| `D-03` | `#10` | Documentação | Registrar planejamento e acompanhamento da Sprint 1 | Alta | Não aplicável | 1 | Concluído |
+| `US-06` | `#16` | Funcionalidade | Realizar login administrativo | Alta | `RF-06` | 2 | A fazer |
+| `US-07` | `#17` | Funcionalidade | Cadastrar ponto de coleta | Alta | `RF-07` | 2 | A fazer |
+| `US-08` | `#18` | Funcionalidade | Editar ponto de coleta | Alta | `RF-08` | 2 | A fazer |
+| `US-09` | `#19` | Funcionalidade | Desativar ponto de coleta | Média | `RF-09` | 2 | A fazer |
+| `US-10` | `#20` | Funcionalidade | Gerenciar materiais aceitos | Alta | `RF-10` | 2 | A fazer |
+| `US-11` | `#21` | Funcionalidade | Gerenciar horários | Média | `RF-11` | 2 | A fazer |
+| `US-12` | `#22` | Funcionalidade | Gerenciar condições de entrega | Média | `RF-12` | 2 | A fazer |
+| `RNF-01` | `#23` | Tarefa | Garantir usabilidade da aplicação | Alta | `RNF-01` | 2 | A fazer |
+| `RNF-02` | `#24` | Tarefa | Garantir responsividade da aplicação | Alta | `RNF-02` | 2 | A fazer |
+| `RNF-03` | `#25` | Tarefa | Garantir segurança da área administrativa | Alta | `RNF-03` | 2 | A fazer |
+| `RNF-04` | `#26` | Tarefa | Garantir compatibilidade entre navegadores | Média | `RNF-04` | 2 | A fazer |
+| `RNF-05` | `#27` | Tarefa | Garantir integridade dos dados | Alta | `RNF-05` | 2 | A fazer |
+| `RNF-06` | `#28` | Tarefa | Garantir disponibilidade da aplicação | Média | `RNF-06` | 2 | A fazer |
 
 ## 5. Definition of Ready
 
@@ -97,5 +98,8 @@ Um item está concluído quando:
 |---|---|---|---|
 | Sprint 1 | Criação dos 10 itens iniciais do Product Backlog | Estruturar o backlog inicial e selecionar os itens necessários para o planejamento da Sprint 1 | Issues `#1` a `#10` e GitHub Project |
 | Sprint 1 | Separação dos itens entre Sprint 1 e Sprint 2 | Diferenciar o trabalho de definição e estruturação inicial das funcionalidades que serão refinadas posteriormente | GitHub Project e `docs/sprints/sprint-01.md` |
+| Sprint 2 | Relacionamento das `US-01` a `US-05` com os requisitos `RF-01` a `RF-05` | Formalizar as funcionalidades inicialmente previstas no backlog como requisitos funcionais verificáveis | `docs/requisitos/requisitos.md` e Issues `#1` a `#5` |
+| Sprint 2 | Inclusão das `US-06` a `US-12` | Incluir as funcionalidades necessárias para o acesso administrativo e gerenciamento dos pontos de coleta | `docs/requisitos/requisitos.md` e Issues `#16` a `#22` |
+| Sprint 2 | Inclusão dos `RNF-01` a `RNF-06` | Registrar requisitos não funcionais relacionados à qualidade e às restrições da aplicação | `docs/requisitos/requisitos.md` e Issues `#23` a `#28` |
 
 
