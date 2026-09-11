@@ -3,7 +3,7 @@
 - **Data de entrega:** 14/09/2026
 - **Pontuação:** 2,5 pontos
 - **Tag obrigatória:** `sprint-02`
-- **Responsável por conferir este arquivo:** `@lucasensousa`
+- **Responsável por conferir este arquivo:** @lucasensousa
 
 ## 1. Pergunta que esta sprint deve responder
 
@@ -13,11 +13,11 @@
 
 **Objetivo planejado:** Especificar os requisitos funcionais e não funcionais do Coleta+, definir as regras de negócio, os critérios de aceitação e o escopo da aplicação, relacionando os requisitos às histórias de usuário e às Issues do Product Backlog.
 
-**Resultado efetivamente alcançado:** Foram especificados os requisitos funcionais `RF-01` a `RF-12`, os requisitos não funcionais `RNF-01` a `RNF-06`, as regras de negócio `RN-01` a `RN-05`, as histórias de usuário e seus critérios de aceitação. O Product Backlog também foi refinado com a relação entre as histórias de usuário e os requisitos definidos.
+**Resultado efetivamente alcançado:** Foram especificados os requisitos funcionais RF-01 a RF-12, os requisitos não funcionais RNF-01 a RNF-06, as regras de negócio RN-01 a RN-05, as histórias de usuário e seus critérios de aceitação. O Product Backlog também foi refinado com a relação entre as histórias de usuário e os requisitos definidos.
 
 ## 3. Checklist do artefato central — 0,75 ponto
 
-**Entrega esperada:** `docs/requisitos/requisitos.md`, histórias/casos, critérios de aceitação, escopo excluído e backlog refinado.
+**Entrega esperada:** docs/requisitos/requisitos.md, histórias/casos, critérios de aceitação, escopo excluído e backlog refinado.
 
 - [x] Atores/perfis identificados.
 - [x] Requisitos funcionais com IDs e prioridade.
@@ -29,8 +29,8 @@
 
 | Artefato criado/atualizado | Link na tag da sprint | O que mudou |
 |---|---|---|
-| `docs/requisitos/requisitos.md` | `[link]` | Foram especificados os requisitos funcionais, requisitos não funcionais, regras de negócio, histórias de usuário, critérios de aceitação e itens fora do escopo. |
-| `docs/backlog-produto.md` | `[link]` | As histórias de usuário foram relacionadas aos requisitos e o backlog foi refinado com as novas funcionalidades administrativas e requisitos não funcionais. |
+| docs/requisitos/requisitos.md | `[link]` | Foram especificados os requisitos funcionais, requisitos não funcionais, regras de negócio, histórias de usuário, critérios de aceitação e itens fora do escopo. |
+| docs/backlog-produto.md | `[link]` | As histórias de usuário foram relacionadas aos requisitos e o backlog foi refinado com as novas funcionalidades administrativas e requisitos não funcionais. |
 
 ## 4. Incremento da aplicação web — 0,75 ponto
 
@@ -38,17 +38,18 @@
 
 ### O que foi implementado ou evoluído
 
-`[Explique o comportamento demonstrável e relacione-o aos requisitos.]`
+Foi desenvolvido um protótipo navegável do fluxo de consulta de pontos de coleta. A página inicial do Coleta+ apresenta uma opção para o usuário encontrar pontos de coleta, direcionando-o para uma página com informações sobre locais, materiais aceitos e horários de funcionamento.
+O incremento está relacionado à história de usuário US-01 e ao requisito funcional RF-01, permitindo demonstrar o fluxo principal de consulta de pontos de coleta.
 
 ### Como executar e verificar
 
 ```bash
-[comandos reais]
+python -m http.server 8000 --directory src
 ```
 
 | Requisito/Issue | Código ou protótipo | Evidência de execução |
 |---|---|---|
-| `RF-XX / #XX` | `[link]` | `[link]` |
+| RF-01 / #1 | src/index.html  src/pontos.html | https://github.com/lucasensousa/coleta-mais/commit/4034ab8bcd0f3e36a099d5d5bbfce68ac990db1a |
 
 ## 5. Scrum e gestão do trabalho — 0,50 ponto
 
@@ -56,72 +57,72 @@
 
 | Issue | Descrição | Responsável | Critério de aceitação/conclusão | Situação |
 |---|---|---|---|---|
-| `#1` | `US-01 — Consultar pontos de coleta de lixo eletrônico em Lavras` | `@lucasensousa` | O usuário deve conseguir consultar os pontos de coleta disponíveis. | Pendente |
-| `#2` | `US-02 — Consultar materiais aceitos em cada ponto de coleta` | `[@usuario]` | O usuário deve conseguir visualizar os materiais aceitos em cada ponto. | Pendente |
-| `#3` | `US-03 — Consultar horário de funcionamento dos pontos de coleta` | `[ @usuario ]` | O usuário deve conseguir consultar os dias e horários de funcionamento. | Pendente |
-| `#4` | `US-04 — Consultar condições de entrega dos materiais` | `[ @usuario ]` | O usuário deve conseguir consultar as condições de entrega. | Pendente |
-| `#5` | `US-05 — Visualizar localização dos pontos de coleta` | `[ @usuario ]` | O usuário deve conseguir visualizar a localização dos pontos de coleta. | Pendente |
-| `#16` | `US-06 — Realizar login administrativo` | `[ @usuario ]` | O administrador deve conseguir acessar a área administrativa utilizando credenciais válidas. | Pendente |
-| `#17` | `US-07 — Cadastrar ponto de coleta` | `[ @usuario ]` | O administrador deve conseguir cadastrar um novo ponto de coleta com os dados obrigatórios. | Pendente |
-| `#18` | `US-08 — Editar ponto de coleta` | `[ @usuario ]` | O administrador deve conseguir alterar os dados de um ponto de coleta cadastrado. | Pendente |
-| `#19` | `US-09 — Desativar ponto de coleta` | `[ @usuario ]` | O administrador deve conseguir desativar um ponto de coleta. | Pendente |
-| `#20` | `US-10 — Gerenciar materiais aceitos` | `[ @usuario ]` | O administrador deve conseguir cadastrar, editar e remover materiais associados aos pontos. | Pendente |
-| `#21` | `US-11 — Gerenciar horários` | `[ @usuario ]` | O administrador deve conseguir cadastrar, editar e remover horários dos pontos. | Pendente |
-| `#22` | `US-12 — Gerenciar condições de entrega` | `[ @usuario ]` | O administrador deve conseguir cadastrar, editar e remover condições de entrega. | Pendente |
-| `#23` | `RNF-01 — Usabilidade` | `[ @usuario ]` | O usuário deve conseguir consultar as informações de um ponto em até 3 interações a partir da página inicial. | Pendente |
-| `#24` | `RNF-02 — Responsividade` | `[ @usuario ]` | As funcionalidades principais devem permanecer acessíveis em dispositivos desktop e móveis. | Pendente |
-| `#25` | `RNF-03 — Segurança` | `[ @usuario ]` | O acesso à área administrativa sem autenticação deve ser impedido. | Pendente |
-| `#26` | `RNF-04 — Compatibilidade` | `[ @usuario ]` | As funcionalidades prioritárias devem funcionar em pelo menos dois navegadores. | Pendente |
-| `#27` | `RNF-05 — Integridade dos dados` | `[ @usuario ]` | O sistema deve impedir o cadastro ou alteração com dados obrigatórios inválidos ou ausentes. | Pendente |
-| `#28` | `RNF-06 — Disponibilidade` | `[ @usuario ]` | A aplicação deve estar acessível durante a demonstração e permitir a execução dos principais fluxos. | Pendente |
+| #1 | US-01 — Consultar pontos de coleta de lixo eletrônico em Lavras | @lucasensousa | O usuário deve conseguir consultar os pontos de coleta disponíveis. | Pendente |
+| #2 | US-02 — Consultar materiais aceitos em cada ponto de coleta | `[@usuario]` | O usuário deve conseguir visualizar os materiais aceitos em cada ponto. | Pendente |
+| #3 | US-03 — Consultar horário de funcionamento dos pontos de coleta | `[ @usuario ]` | O usuário deve conseguir consultar os dias e horários de funcionamento. | Pendente |
+| #4 | US-04 — Consultar condições de entrega dos materiais | `[ @usuario ]` | O usuário deve conseguir consultar as condições de entrega. | Pendente |
+| #5 | US-05 — Visualizar localização dos pontos de coleta | `[ @usuario ]` | O usuário deve conseguir visualizar a localização dos pontos de coleta. | Pendente |
+| #16 | US-06 — Realizar login administrativo | `[ @usuario ]` | O administrador deve conseguir acessar a área administrativa utilizando credenciais válidas. | Pendente |
+| #17 | US-07 — Cadastrar ponto de coleta | `[ @usuario ]` | O administrador deve conseguir cadastrar um novo ponto de coleta com os dados obrigatórios. | Pendente |
+| #18 | US-08 — Editar ponto de coleta | `[ @usuario ]` | O administrador deve conseguir alterar os dados de um ponto de coleta cadastrado. | Pendente |
+| #19 | US-09 — Desativar ponto de coleta | `[ @usuario ]` | O administrador deve conseguir desativar um ponto de coleta. | Pendente |
+| #20 | US-10 — Gerenciar materiais aceitos | `[ @usuario ]` | O administrador deve conseguir cadastrar, editar e remover materiais associados aos pontos. | Pendente |
+| #21 | US-11 — Gerenciar horários | `[ @usuario ]` | O administrador deve conseguir cadastrar, editar e remover horários dos pontos. | Pendente |
+| #22 |`US-12 — Gerenciar condições de entrega | `[ @usuario ]` | O administrador deve conseguir cadastrar, editar e remover condições de entrega. | Pendente |
+| #23 | RNF-01 — Usabilidade | `[ @usuario ]` | O usuário deve conseguir consultar as informações de um ponto em até 3 interações a partir da página inicial. | Pendente |
+| #24 | RNF-02 — Responsividade | `[ @usuario ]` | As funcionalidades principais devem permanecer acessíveis em dispositivos desktop e móveis. | Pendente |
+| #25 | RNF-03 — Segurança | `[ @usuario ]` | O acesso à área administrativa sem autenticação deve ser impedido. | Pendente |
+| #26 | RNF-04 — Compatibilidade | `[ @usuario ]` | As funcionalidades prioritárias devem funcionar em pelo menos dois navegadores. | Pendente |
+| #27 | RNF-05 — Integridade dos dados | `[ @usuario ]` | O sistema deve impedir o cadastro ou alteração com dados obrigatórios inválidos ou ausentes. | Pendente |
+| #28 | RNF-06 — Disponibilidade | `[ @usuario ]` | A aplicação deve estar acessível durante a demonstração e permitir a execução dos principais fluxos. | Pendente |
 
 ### Acompanhamento
 
-- **GitHub Project:** `https://github.com/users/lucasensousa/projects/2`
+- **GitHub Project:** https://github.com/users/lucasensousa/projects/2
 - **Reuniões/decisões:** `[links para docs/reunioes/]`
-- **Impedimentos:** `[PREENCHER ou Nenhum]`
-- **Mudanças de escopo:** `[PREENCHER ou Nenhuma]`
+- **Impedimentos:** Nenhum.
+- **Mudanças de escopo:** Foi incluída a área administrativa para permitir o gerenciamento dos pontos de coleta e suas informações.
 
 ## 6. GitHub, documentação e rastreabilidade — 0,50 ponto
 
 | Tipo de evidência | Link | O que comprova |
 |---|---|---|
-| Issue | `https://github.com/lucasensousa/coleta-mais/issues` | Registra as histórias de usuário e os requisitos relacionados ao trabalho da Sprint 2. |
+| Issue | https://github.com/lucasensousa/coleta-mais/issues | Registra as histórias de usuário e os requisitos relacionados ao trabalho da Sprint 2. |
 | Pull Request | `[PREENCHER]` | `[PREENCHER]` |
-| Commit | `https://github.com/lucasensousa/coleta-mais/commit/c31df5af3ce6ea7c2be7d60e9e0ce8937359d50b` | Comprova a especificação dos requisitos da Sprint 2 no arquivo `docs/requisitos/requisitos.md`. |
-| Código/arquivo | `https://github.com/lucasensousa/coleta-mais/blob/develop/docs/requisitos/requisitos.md` | Comprova o documento de requisitos produzido e atualizado durante a Sprint 2. |
-| Teste/captura/relatório | `[PREENCHER]` | `[PREENCHER]` |
+| Commit | https://github.com/lucasensousa/coleta-mais/commit/c31df5af3ce6ea7c2be7d60e9e0ce8937359d50b | Comprova a especificação dos requisitos da Sprint 2 no arquivo docs/requisitos/requisitos.md. |
+| Código/arquivo | https://github.com/lucasensousa/coleta-mais/commit/4034ab8bcd0f3e36a099d5d5bbfce68ac990db1a | Comprova a implementação do protótipo navegável do fluxo de consulta de pontos de coleta. |
+| Teste/captura/relatório | Ainda não aplicável|  O incremento foi validado por meio da execução local e navegação entre as páginas do protótipo. |
 
 ### Rastreabilidade resumida
 
 | Requisito | Issue | Artefato/modelo/decisão | Código | Teste/evidência |
 |---|---|---|---|---|
-| `RF-01` | `#1` | `docs/requisitos/requisitos.md` — US-01 | Ainda não implementado | Ainda não aplicável |
-| `RF-02` | `#2` | `docs/requisitos/requisitos.md` — US-02 | Ainda não implementado | Ainda não aplicável |
-| `RF-03` | `#3` | `docs/requisitos/requisitos.md` — US-03 | Ainda não implementado | Ainda não aplicável |
-| `RF-04` | `#4` | `docs/requisitos/requisitos.md` — US-04 | Ainda não implementado | Ainda não aplicável |
-| `RF-05` | `#5` | `docs/requisitos/requisitos.md` — US-05 | Ainda não implementado | Ainda não aplicável |
-| `RF-06` | `#16` | `docs/requisitos/requisitos.md` — US-06 | Ainda não implementado | Ainda não aplicável |
-| `RF-07` | `#17` | `docs/requisitos/requisitos.md` — US-07 | Ainda não implementado | Ainda não aplicável |
-| `RF-08` | `#18` | `docs/requisitos/requisitos.md` — US-08 | Ainda não implementado | Ainda não aplicável |
-| `RF-09` | `#19` | `docs/requisitos/requisitos.md` — US-09 | Ainda não implementado | Ainda não aplicável |
-| `RF-10` | `#20` | `docs/requisitos/requisitos.md` — US-10 | Ainda não implementado | Ainda não aplicável |
-| `RF-11` | `#21` | `docs/requisitos/requisitos.md` — US-11 | Ainda não implementado | Ainda não aplicável |
-| `RF-12` | `#22` | `docs/requisitos/requisitos.md` — US-12 | Ainda não implementado | Ainda não aplicável |
-| `RNF-01` | `#23` | `docs/requisitos/requisitos.md` — requisito de usabilidade | Ainda não implementado | Ainda não aplicável |
-| `RNF-02` | `#24` | `docs/requisitos/requisitos.md` — requisito de responsividade | Ainda não implementado | Ainda não aplicável |
-| `RNF-03` | `#25` | `docs/requisitos/requisitos.md` — requisito de segurança | Ainda não implementado | Ainda não aplicável |
-| `RNF-04` | `#26` | `docs/requisitos/requisitos.md` — requisito de compatibilidade | Ainda não implementado | Ainda não aplicável |
-| `RNF-05` | `#27` | `docs/requisitos/requisitos.md` — requisito de integridade dos dados | Ainda não implementado | Ainda não aplicável |
-| `RNF-06` | `#28` | `docs/requisitos/requisitos.md` — requisito de disponibilidade | Ainda não implementado | Ainda não aplicável |
+| RF-01 | #1 | docs/requisitos/requisitos.md — US-01 | src/index.html e src/pontos.html | `https://github.com/lucasensousa/coleta-mais/commit/4034ab8bcd0f3e36a099d5d5bbfce68ac990db1a |
+| RF-02 | #2 | docs/requisitos/requisitos.md — US-02 | Ainda não implementado | Ainda não aplicável |
+| RF-03 | #3 | docs/requisitos/requisitos.md — US-03 | Ainda não implementado | Ainda não aplicável |
+| RF-04 | #4 | docs/requisitos/requisitos.md — US-04 | Ainda não implementado | Ainda não aplicável |
+| RF-05 | #5 | docs/requisitos/requisitos.md — US-05 | Ainda não implementado | Ainda não aplicável |
+| RF-06 | #16 | docs/requisitos/requisitos.md — US-06 | Ainda não implementado | Ainda não aplicável |
+| RF-07 | #17 | docs/requisitos/requisitos.md — US-07 | Ainda não implementado | Ainda não aplicável |
+| RF-08 | #18 | docs/requisitos/requisitos.md — US-08 | Ainda não implementado | Ainda não aplicável |
+| RF-09 | #19 | docs/requisitos/requisitos.md — US-09 | Ainda não implementado | Ainda não aplicável |
+| RF-10 | #20 | docs/requisitos/requisitos.md — US-10 | Ainda não implementado | Ainda não aplicável |
+| RF-11 | #21 | docs/requisitos/requisitos.md — US-11 | Ainda não implementado | Ainda não aplicável |
+| RF-12 | #22 | docs/requisitos/requisitos.md — US-12 | Ainda não implementado | Ainda não aplicável |
+| RNF-01 | #23 | docs/requisitos/requisitos.md — requisito de usabilidade | Ainda não implementado | Ainda não aplicável |
+| RNF-02 | #24 | docs/requisitos/requisitos.md — requisito de responsividade | Ainda não implementado | Ainda não aplicável |
+| RNF-03 | #25 | docs/requisitos/requisitos.md — requisito de segurança | Ainda não implementado | Ainda não aplicável |
+| RNF-04 | #26 | docs/requisitos/requisitos.md — requisito de compatibilidade | Ainda não implementado | Ainda não aplicável |
+| RNF-05 | #27 | docs/requisitos/requisitos.md — requisito de integridade dos dados | Ainda não implementado | Ainda não aplicável |
+| RNF-06 | #28 | docs/requisitos/requisitos.md — requisito de disponibilidade | Ainda não implementado | Ainda não aplicável |
 
 ## 7. Revisão do incremento
 
-- **O que foi demonstrado:** `[PREENCHER]`
-- **Critérios atendidos:** `[PREENCHER]`
-- **Itens não concluídos:** `[PREENCHER]`
-- **Motivo das pendências:** `[PREENCHER]`
-- **Feedback recebido e ajustes:** `[PREENCHER]`
+- **O que foi demonstrado:**  Foi demonstrado o fluxo inicial de consulta de pontos de coleta. A partir da página inicial do Coleta+, o usuário pode acessar a página de pontos de coleta e visualizar informações sobre localização, materiais aceitos e horário de funcionamento.
+- **Critérios atendidos:** Foi atendido o critério de disponibilizar um protótipo navegável relacionado ao RF-01 / US-01, permitindo iniciar e concluir o fluxo de consulta dos pontos de coleta.
+- **Itens não concluídos:** Implementação completa das funcionalidades do sistema, incluindo persistência de dados, gerenciamento administrativo e demais funcionalidades previstas nos requisitos.
+- **Motivo das pendências:** O objetivo do incremento da Sprint 2 é disponibilizar um protótipo navegável mínimo. A implementação completa das funcionalidades será realizada nas etapas posteriores do projeto.
+- **Feedback recebido e ajustes:** O protótipo foi ajustado para representar o fluxo de consulta de pontos de coleta definido nos requisitos da Sprint 2.
 
 ## 8. Retrospectiva e próxima sprint
 
