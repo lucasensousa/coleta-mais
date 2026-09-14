@@ -2,7 +2,7 @@
 
 - **Data de entrega:** 14/09/2026
 - **Pontuação:** 2,5 pontos
-- **Tag obrigatória:** `sprint-02`
+- **Tag obrigatória:** (https://github.com/lucasensousa/coleta-mais/releases/tag/sprint-02)
 - **Responsável por conferir este arquivo:** @lucasensousa
 
 ## 1. Pergunta que esta sprint deve responder
@@ -29,8 +29,8 @@
 
 | Artefato criado/atualizado | Link na tag da sprint | O que mudou |
 |---|---|---|
-| docs/requisitos/requisitos.md | `[link]` | Foram especificados os requisitos funcionais, requisitos não funcionais, regras de negócio, histórias de usuário, critérios de aceitação e itens fora do escopo. |
-| docs/backlog-produto.md | `[link]` | As histórias de usuário foram relacionadas aos requisitos e o backlog foi refinado com as novas funcionalidades administrativas e requisitos não funcionais. |
+| docs/requisitos/requisitos.md | https://github.com/lucasensousa/coleta-mais/releases/tag/sprint-02| Foram especificados os requisitos funcionais, requisitos não funcionais, regras de negócio, histórias de usuário, critérios de aceitação e itens fora do escopo. |
+| docs/backlog-produto.md | https://github.com/lucasensousa/coleta-mais/releases/tag/sprint-02 | As histórias de usuário foram relacionadas aos requisitos e o backlog foi refinado com as novas funcionalidades administrativas e requisitos não funcionais. |
 
 ## 4. Incremento da aplicação web — 0,75 ponto
 
@@ -86,7 +86,7 @@ Abrir o arquivo src/index.html em um navegador.
 | Tipo de evidência | Link | O que comprova |
 |---|---|---|
 | Issue | https://github.com/lucasensousa/coleta-mais/issues | Registra as histórias de usuário e os requisitos relacionados ao trabalho da Sprint 2. |
-| Pull Request | Não aplicável | Não aplicável |
+| Pull Request | https://github.com/lucasensousa/coleta-mais/pull/29 | Revisão e integração das alterações realizadas pela equipe. |
 | Commit | https://github.com/lucasensousa/coleta-mais/commit/c31df5af3ce6ea7c2be7d60e9e0ce8937359d50b | Comprova a especificação dos requisitos da Sprint 2 no arquivo docs/requisitos/requisitos.md. |
 | Código/arquivo | https://github.com/lucasensousa/coleta-mais/commit/4034ab8bcd0f3e36a099d5d5bbfce68ac990db1a | Comprova a implementação do protótipo navegável do fluxo de consulta de pontos de coleta. |
 | Teste/captura/relatório | Ainda não aplicável|  O incremento foi validado por meio da execução local e navegação entre as páginas do protótipo. |
@@ -136,6 +136,6 @@ Abrir o arquivo src/index.html em um navegador.
 
 ## 10. Links enviados no UFLA Virtual
 
-- **Tag `sprint-02`:** `[COLAR LINK]`
-- **Este arquivo na tag:** `[COLAR LINK]`
+- **Tag `sprint-02`:** (https://github.com/lucasensousa/coleta-mais/releases/tag/sprint-02)
+- **Este arquivo na tag:** (https://github.com/lucasensousa/coleta-mais/blob/main/docs/sprints/sprint-02.md)
 - **Observação adicional:** Não aplicável.
