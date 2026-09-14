@@ -43,9 +43,7 @@ O incremento está relacionado à história de usuário US-01 e ao requisito fun
 
 ### Como executar e verificar
 
-```bash
-python -m http.server 8000 --directory src
-```
+Abrir o arquivo src/index.html em um navegador.
 
 | Requisito/Issue | Código ou protótipo | Evidência de execução |
 |---|---|---|
@@ -58,28 +56,28 @@ python -m http.server 8000 --directory src
 | Issue | Descrição | Responsável | Critério de aceitação/conclusão | Situação |
 |---|---|---|---|---|
 | #1 | US-01 — Consultar pontos de coleta de lixo eletrônico em Lavras | @lucasensousa | O usuário deve conseguir consultar os pontos de coleta disponíveis. | Pendente |
-| #2 | US-02 — Consultar materiais aceitos em cada ponto de coleta | `[@usuario]` | O usuário deve conseguir visualizar os materiais aceitos em cada ponto. | Pendente |
-| #3 | US-03 — Consultar horário de funcionamento dos pontos de coleta | `[ @usuario ]` | O usuário deve conseguir consultar os dias e horários de funcionamento. | Pendente |
-| #4 | US-04 — Consultar condições de entrega dos materiais | `[ @usuario ]` | O usuário deve conseguir consultar as condições de entrega. | Pendente |
-| #5 | US-05 — Visualizar localização dos pontos de coleta | `[ @usuario ]` | O usuário deve conseguir visualizar a localização dos pontos de coleta. | Pendente |
-| #16 | US-06 — Realizar login administrativo | `[ @usuario ]` | O administrador deve conseguir acessar a área administrativa utilizando credenciais válidas. | Pendente |
-| #17 | US-07 — Cadastrar ponto de coleta | `[ @usuario ]` | O administrador deve conseguir cadastrar um novo ponto de coleta com os dados obrigatórios. | Pendente |
-| #18 | US-08 — Editar ponto de coleta | `[ @usuario ]` | O administrador deve conseguir alterar os dados de um ponto de coleta cadastrado. | Pendente |
-| #19 | US-09 — Desativar ponto de coleta | `[ @usuario ]` | O administrador deve conseguir desativar um ponto de coleta. | Pendente |
-| #20 | US-10 — Gerenciar materiais aceitos | `[ @usuario ]` | O administrador deve conseguir cadastrar, editar e remover materiais associados aos pontos. | Pendente |
-| #21 | US-11 — Gerenciar horários | `[ @usuario ]` | O administrador deve conseguir cadastrar, editar e remover horários dos pontos. | Pendente |
-| #22 |`US-12 — Gerenciar condições de entrega | `[ @usuario ]` | O administrador deve conseguir cadastrar, editar e remover condições de entrega. | Pendente |
-| #23 | RNF-01 — Usabilidade | `[ @usuario ]` | O usuário deve conseguir consultar as informações de um ponto em até 3 interações a partir da página inicial. | Pendente |
-| #24 | RNF-02 — Responsividade | `[ @usuario ]` | As funcionalidades principais devem permanecer acessíveis em dispositivos desktop e móveis. | Pendente |
-| #25 | RNF-03 — Segurança | `[ @usuario ]` | O acesso à área administrativa sem autenticação deve ser impedido. | Pendente |
-| #26 | RNF-04 — Compatibilidade | `[ @usuario ]` | As funcionalidades prioritárias devem funcionar em pelo menos dois navegadores. | Pendente |
-| #27 | RNF-05 — Integridade dos dados | `[ @usuario ]` | O sistema deve impedir o cadastro ou alteração com dados obrigatórios inválidos ou ausentes. | Pendente |
-| #28 | RNF-06 — Disponibilidade | `[ @usuario ]` | A aplicação deve estar acessível durante a demonstração e permitir a execução dos principais fluxos. | Pendente |
+| #2 | US-02 — Consultar materiais aceitos em cada ponto de coleta | @lucasensousa | O usuário deve conseguir visualizar os materiais aceitos em cada ponto. | Pendente |
+| #3 | US-03 — Consultar horário de funcionamento dos pontos de coleta | @lucasensousa | O usuário deve conseguir consultar os dias e horários de funcionamento. | Pendente |
+| #4 | US-04 — Consultar condições de entrega dos materiais | @lucasensousa | O usuário deve conseguir consultar as condições de entrega. | Pendente |
+| #5 | US-05 — Visualizar localização dos pontos de coleta | @AnthonyJSilva03| O usuário deve conseguir visualizar a localização dos pontos de coleta. | Pendente |
+| #16 | US-06 — Realizar login administrativo | @AnthonyJSilva03 | O administrador deve conseguir acessar a área administrativa utilizando credenciais válidas. | Pendente |
+| #17 | US-07 — Cadastrar ponto de coleta | @LuizPauloFelizali | O administrador deve conseguir cadastrar um novo ponto de coleta com os dados obrigatórios. | Pendente |
+| #18 | US-08 — Editar ponto de coleta | @LuizPauloFelizali | O administrador deve conseguir alterar os dados de um ponto de coleta cadastrado. | Pendente |
+| #19 | US-09 — Desativar ponto de coleta | @ThawanVCSantos | O administrador deve conseguir desativar um ponto de coleta. | Pendente |
+| #20 | US-10 — Gerenciar materiais aceitos | @ThawanVCSantos | O administrador deve conseguir cadastrar, editar e remover materiais associados aos pontos. | Pendente |
+| #21 | US-11 — Gerenciar horários | @lucasensousa | O administrador deve conseguir cadastrar, editar e remover horários dos pontos. | Pendente |
+| #22 |`US-12 — Gerenciar condições de entrega | @ThawanVCSantos | O administrador deve conseguir cadastrar, editar e remover condições de entrega. | Pendente |
+| #23 | RNF-01 — Usabilidade | @LuizPauloFelizali | O usuário deve conseguir consultar as informações de um ponto em até 3 interações a partir da página inicial. | Pendente |
+| #24 | RNF-02 — Responsividade | @LuizPauloFelizali | As funcionalidades principais devem permanecer acessíveis em dispositivos desktop e móveis. | Pendente |
+| #25 | RNF-03 — Segurança | @AnthonyJSilva03 | O acesso à área administrativa sem autenticação deve ser impedido. | Pendente |
+| #26 | RNF-04 — Compatibilidade | @ThawanVCSantos | As funcionalidades prioritárias devem funcionar em pelo menos dois navegadores. | Pendente |
+| #27 | RNF-05 — Integridade dos dados | @ThawanVCSantos | O sistema deve impedir o cadastro ou alteração com dados obrigatórios inválidos ou ausentes. | Pendente |
+| #28 | RNF-06 — Disponibilidade | @AnthonyJSilva03 | A aplicação deve estar acessível durante a demonstração e permitir a execução dos principais fluxos. | Pendente |
 
 ### Acompanhamento
 
 - **GitHub Project:** https://github.com/users/lucasensousa/projects/2
-- **Reuniões/decisões:** `[links para docs/reunioes/]`
+- **Reuniões/decisões:** (https://meet.google.com/jgm-djwy-xhw?pli=1)
 - **Impedimentos:** Nenhum.
 - **Mudanças de escopo:** Foi incluída a área administrativa para permitir o gerenciamento dos pontos de coleta e suas informações.
 
@@ -88,7 +86,7 @@ python -m http.server 8000 --directory src
 | Tipo de evidência | Link | O que comprova |
 |---|---|---|
 | Issue | https://github.com/lucasensousa/coleta-mais/issues | Registra as histórias de usuário e os requisitos relacionados ao trabalho da Sprint 2. |
-| Pull Request | `[PREENCHER]` | `[PREENCHER]` |
+| Pull Request | Não aplicável | Não aplicável |
 | Commit | https://github.com/lucasensousa/coleta-mais/commit/c31df5af3ce6ea7c2be7d60e9e0ce8937359d50b | Comprova a especificação dos requisitos da Sprint 2 no arquivo docs/requisitos/requisitos.md. |
 | Código/arquivo | https://github.com/lucasensousa/coleta-mais/commit/4034ab8bcd0f3e36a099d5d5bbfce68ac990db1a | Comprova a implementação do protótipo navegável do fluxo de consulta de pontos de coleta. |
 | Teste/captura/relatório | Ainda não aplicável|  O incremento foi validado por meio da execução local e navegação entre as páginas do protótipo. |
@@ -140,4 +138,4 @@ python -m http.server 8000 --directory src
 
 - **Tag `sprint-02`:** `[COLAR LINK]`
 - **Este arquivo na tag:** `[COLAR LINK]`
-- **Observação adicional:** `[quando necessária]`
+- **Observação adicional:** Não aplicável.
