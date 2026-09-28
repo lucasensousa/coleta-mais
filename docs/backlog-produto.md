@@ -8,6 +8,8 @@ https://github.com/users/lucasensousa/projects/2
 
 > O GitHub Project é utilizado como fonte operacional do backlog. As Issues representam os itens de trabalho e são utilizadas para acompanhar prioridade, responsável, sprint e status.
 
+**Última atualização:** 27/09/2026 — Sprint 3
+
 ## 2. Campos obrigatórios no Project
 
 Cada item do backlog deve possuir, no mínimo:
@@ -64,6 +66,10 @@ As funcionalidades destinadas ao usuário final foram mantidas no Product Backlo
 | `RNF-04` | `#26` | Tarefa | Garantir compatibilidade entre navegadores | Média | `RNF-04` | 2 | A fazer |
 | `RNF-05` | `#27` | Tarefa | Garantir integridade dos dados | Alta | `RNF-05` | 2 | A fazer |
 | `RNF-06` | `#28` | Tarefa | Garantir disponibilidade da aplicação | Média | `RNF-06` | 2 | A fazer |
+| `T-03` | [#31](https://github.com/lucasensousa/coleta-mais/issues/31) | Tarefa | Criar modelo comportamental do fluxo de consulta | Alta | `RF-01`, `RF-02`, `RF-03`, `RF-04`, `RF-05` | 3 | A fazer |
+| `T-04` | [#32](https://github.com/lucasensousa/coleta-mais/issues/32) | Tarefa | Criar modelo estrutural do domínio | Alta | `RF-01`, `RF-02`, `RF-03`, `RF-04`, `RF-05`, `RF-07`, `RF-10`, `RF-11`, `RF-12` | 3 | A fazer |
+| `T-05` | [#33](https://github.com/lucasensousa/coleta-mais/issues/33) | Tarefa | Evoluir fluxo de consulta conforme modelo | Alta | `RF-01`, `RF-02`, `RF-03`, `RF-04`, `RF-05` | 3 | A fazer |
+| `D-04` | [#34](https://github.com/lucasensousa/coleta-mais/issues/34) | Documentação | Documentar modelagem e rastreabilidade | Alta | Não aplicável | 3 | A fazer |
 
 ## 5. Definition of Ready
 
@@ -101,5 +107,6 @@ Um item está concluído quando:
 | Sprint 2 | Relacionamento das `US-01` a `US-05` com os requisitos `RF-01` a `RF-05` | Formalizar as funcionalidades inicialmente previstas no backlog como requisitos funcionais verificáveis | `docs/requisitos/requisitos.md` e Issues `#1` a `#5` |
 | Sprint 2 | Inclusão das `US-06` a `US-12` | Incluir as funcionalidades necessárias para o acesso administrativo e gerenciamento dos pontos de coleta | `docs/requisitos/requisitos.md` e Issues `#16` a `#22` |
 | Sprint 2 | Inclusão dos `RNF-01` a `RNF-06` | Registrar requisitos não funcionais relacionados à qualidade e às restrições da aplicação | `docs/requisitos/requisitos.md` e Issues `#23` a `#28` |
+| Sprint 3 | Inclusão das tarefas `T-03`, `T-04`, `T-05` e documentação `D-04` | Registrar as atividades de modelagem, evolução da implementação e rastreabilidade identificadas para a Sprint 3 | Issues `#31` a `#34` e GitHub Project |
 
 
