@@ -3,7 +3,7 @@
 - **Data de entrega:** 24/08/2026
 - **Pontuação:** 2,5 pontos
 - **Tag obrigatória:** `sprint-01`
-- **Responsável por conferir este arquivo:** ``
+- **Responsável por conferir este arquivo:** @lucasensousa
 
 ## 1. Pergunta que esta sprint deve responder
 
