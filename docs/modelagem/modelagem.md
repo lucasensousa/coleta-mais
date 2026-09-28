@@ -1,6 +1,6 @@
 # Modelagem do sistema
 
-> **Artefato central da Sprint 3.** Os modelos devem explicar a estrutura e o comportamento da solução e corresponder aos requisitos e ao código.
+> **Artefato central da Sprint 3.** 
 
 ## 1. Modelos selecionados
 
@@ -11,7 +11,6 @@
 
 ## 2. Modelo comportamental em Mermaid
 
-> Substitua pelo modelo real. O Mermaid é renderizado pelo GitHub e permanece versionado junto ao projeto.
 
 ```mermaid
 sequenceDiagram
