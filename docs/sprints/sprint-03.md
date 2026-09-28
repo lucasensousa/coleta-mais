@@ -86,7 +86,7 @@ Na página inicial, acessar a opção "Encontrar pontos de coleta" e verificar a
 | Pull Request | `[link]` | Integração das alterações da Sprint 3 |
 | Commit | `[link]` | ` ` |
 | Código/arquivo | [src/pontos.js](../../src/pontos.js) / [src/pontos.html](../../src/pontos.html) | Implementação do incremento do fluxo de consulta. |
-| Teste/captura/relatório | ` ` | Evidência visual da execução do fluxo de consulta. |
+| Teste/captura/relatório | [Pontos de coleta](../modelagem/imagens/consulta-pontos.png) | Evidência visual da execução do fluxo de consulta. |
 
 ### Rastreabilidade resumida
 
