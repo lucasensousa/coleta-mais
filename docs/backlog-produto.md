@@ -49,7 +49,7 @@ As funcionalidades destinadas ao usuário final foram mantidas no Product Backlo
 | `US-04` | `#4` | Funcionalidade | Consultar condições de entrega dos materiais | Média | `RF-04` | 2 | A fazer |
 | `US-05` | `#5` | Funcionalidade | Visualizar localização dos pontos de coleta | Alta | `RF-05` | 2 | A fazer |
 | `T-01` | `#11` | Tarefa | Criar estrutura inicial da aplicação web | Alta | Não aplicável | 1 | Concluído |
-| `T-02` | `#12` | Tarefa | Criar página inicial do Coleta+ | Média | Não aplicável | 1 | A fazer |
+| `T-02` | `#12` | Tarefa | Criar página inicial do Coleta+ | Média | Não aplicável | 1 | Concluido |
 | `D-01` | `#8` | Documentação | Documentar a visão geral do produto | Alta | Não aplicável | 1 | Concluído |
 | `D-02` | `#9` | Documentação | Organizar e documentar o Product Backlog | Alta | Não aplicável | 1 | Concluído |
 | `D-03` | `#10` | Documentação | Registrar planejamento e acompanhamento da Sprint 1 | Alta | Não aplicável | 1 | Concluído |
@@ -66,10 +66,10 @@ As funcionalidades destinadas ao usuário final foram mantidas no Product Backlo
 | `RNF-04` | `#26` | Tarefa | Garantir compatibilidade entre navegadores | Média | `RNF-04` | 2 | A fazer |
 | `RNF-05` | `#27` | Tarefa | Garantir integridade dos dados | Alta | `RNF-05` | 2 | A fazer |
 | `RNF-06` | `#28` | Tarefa | Garantir disponibilidade da aplicação | Média | `RNF-06` | 2 | A fazer |
-| `T-03` | [#31](https://github.com/lucasensousa/coleta-mais/issues/31) | Tarefa | Criar modelo comportamental do fluxo de consulta | Alta | `RF-01`, `RF-02`, `RF-03`, `RF-04`, `RF-05` | 3 | A fazer |
-| `T-04` | [#32](https://github.com/lucasensousa/coleta-mais/issues/32) | Tarefa | Criar modelo estrutural do domínio | Alta | `RF-01`, `RF-02`, `RF-03`, `RF-04`, `RF-05`, `RF-07`, `RF-10`, `RF-11`, `RF-12` | 3 | A fazer |
-| `T-05` | [#33](https://github.com/lucasensousa/coleta-mais/issues/33) | Tarefa | Evoluir fluxo de consulta conforme modelo | Alta | `RF-01`, `RF-02`, `RF-03`, `RF-04`, `RF-05` | 3 | A fazer |
-| `D-04` | [#34](https://github.com/lucasensousa/coleta-mais/issues/34) | Documentação | Documentar modelagem e rastreabilidade | Alta | Não aplicável | 3 | A fazer |
+| `T-03` | [#31](https://github.com/lucasensousa/coleta-mais/issues/31) | Tarefa | Criar modelo comportamental do fluxo de consulta | Alta | `RF-01`, `RF-02`, `RF-03`, `RF-04`, `RF-05` | 3 | Concluido |
+| `T-04` | [#32](https://github.com/lucasensousa/coleta-mais/issues/32) | Tarefa | Criar modelo estrutural do domínio | Alta | `RF-01`, `RF-02`, `RF-03`, `RF-04`, `RF-05`, `RF-07`, `RF-10`, `RF-11`, `RF-12` | 3 | Concluido |
+| `T-05` | [#33](https://github.com/lucasensousa/coleta-mais/issues/33) | Tarefa | Evoluir fluxo de consulta conforme modelo | Alta | `RF-01`, `RF-02`, `RF-03`, `RF-04`, `RF-05` | 3 | Concluido |
+| `D-04` | [#34](https://github.com/lucasensousa/coleta-mais/issues/34) | Documentação | Documentar modelagem e rastreabilidade | Alta | Não aplicável | 3 | Concluido |
 
 ## 5. Definition of Ready
 
