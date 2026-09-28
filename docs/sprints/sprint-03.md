@@ -2,7 +2,7 @@
 
 - **Data de entrega:** 28/09/2026
 - **Pontuação:** 2,5 pontos
-- **Tag obrigatória:** `sprint-03`
+- **Tag obrigatória:** [sprint-03](https://github.com/lucasensousa/coleta-mais/releases/tag/sprint-03)
 - **Responsável por conferir este arquivo:** @lucasensousa
 
 ## 1. Pergunta que esta sprint deve responder
@@ -29,8 +29,8 @@
 
 | Artefato criado/atualizado | Link na tag da sprint | O que mudou |
 |---|---|---|
-| docs/modelagem/modelagem.md | `[link]` | Inclusão dos modelos comportamental e estrutural, suas descrições, decisões e relação com os requisitos |
-| docs/rastreabilidade.md | `[link]` | Inclusão da rastreabilidade entre requisitos, modelos e implementação |
+| docs/modelagem/modelagem.md | [sprint-03](https://github.com/lucasensousa/coleta-mais/releases/tag/sprint-03) | Inclusão dos modelos comportamental e estrutural, suas descrições, decisões e relação com os requisitos |
+| docs/rastreabilidade.md | [sprint-03](https://github.com/lucasensousa/coleta-mais/releases/tag/sprint-03) | Inclusão da rastreabilidade entre requisitos, modelos e implementação |
 
 ## 4. Incremento da aplicação web — 0,75 ponto
 
@@ -126,6 +126,6 @@ Na página inicial, acessar a opção "Encontrar pontos de coleta" e verificar a
 
 ## 10. Links enviados no UFLA Virtual
 
-- **Tag `sprint-03`:** `[COLAR LINK]`
-- **Este arquivo na tag:** `[COLAR LINK]`
+- **Tag `sprint-03`:** [sprint-03](https://github.com/lucasensousa/coleta-mais/releases/tag/sprint-03)
+- **Este arquivo na tag:** [Sprint-03](https://github.com/lucasensousa/coleta-mais/blob/sprint-03/docs/sprints/sprint-03.md)
 - **Observação adicional:** Nenhuma
