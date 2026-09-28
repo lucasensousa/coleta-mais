@@ -114,11 +114,11 @@ A modelagem foi mantida em nível conceitual para representar o domínio da solu
 | **Administrador** | docs/requisitos/requisitos.md | Perfil responsável pelo gerenciamento dos pontos e informações associadas, previsto nos requisitos e representado no modelo estrutural |
 | **Página Inicial** | src/index.html | Página utilizada para iniciar o fluxo de consulta |
 | **Página de Pontos** | src/pontos.html | Página utilizada para apresentar os pontos de coleta |
-| **Estrutura de dados dos pontos** | src/pontos.html | Os dados dos pontos estão atualmente representados na própria página |
-| **PONTO_COLETA** | src/pontos.html | Os pontos de coleta apresentados na aplicação |
-| **MATERIAL** | src/pontos.html | Materiais aceitos apresentados para cada ponto |
-| **HORARIO** | src/pontos.html | Horários de funcionamento apresentados para cada ponto |
-| **CONDICAO_ENTREGA** | docs/requisitos/requisitos.md | Elemento previsto nos requisitos e representado no modelo; ainda não possui representação correspondente na interface atual |
+| **Estrutura de dados dos pontos** | src/pontos.js | Contém a estrutura organizada dos pontos de coleta e suas informações associadas. |
+| **PONTO_COLETA** | src/pontos.js | Representado pelos objetos da estrutura pontosColeta. |
+| **MATERIAL** | src/pontos.js | Representado pela propriedade materiais de cada ponto de coleta. |
+| **HORARIO** | src/pontos.js | Representado pela propriedade horarios de cada ponto de coleta. |
+| **CONDICAO_ENTREGA** | src/pontos.js | Representado pela propriedade condicoes de cada ponto de coleta e exibido na interface. |
 
 ## 6. Refinamentos identificados
 
@@ -126,6 +126,8 @@ A modelagem foi mantida em nível conceitual para representar o domínio da solu
 - Organização de dados: A modelagem evidenciou a necessidade de organizar os dados dos pontos de forma estruturada para facilitar a evolução da aplicação nas próximas sprints.
 - O atributo status foi incluído em PontoColeta para representar conceitualmente a situação de disponibilidade do ponto.
 - A modelagem estrutural foi mantida em nível conceitual para evitar antecipar decisões de implementação que serão tratadas nas próximas etapas do projeto.
+- Organização da implementação: A estrutura de dados dos pontos de coleta foi separada do código de apresentação, passando a ser mantida em src/pontos.js. Essa alteração aproxima a implementação do modelo estrutural definido na Sprint 3 e facilita futuras evoluções da aplicação.
+
 ## 7. Histórico de atualização
 
 | Sprint | Modelo alterado | Motivo | Evidência |
