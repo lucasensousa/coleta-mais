@@ -83,8 +83,8 @@ Na página inicial, acessar a opção "Encontrar pontos de coleta" e verificar a
 | Issue | [#32](https://github.com/lucasensousa/coleta-mais/issues/32) | Criação e documentação do modelo estrutural |
 | Issue | [#33](https://github.com/lucasensousa/coleta-mais/issues/33) | Evolução do fluxo de consulta conforme os modelos |
 | Issue | [#34](https://github.com/lucasensousa/coleta-mais/issues/34) | Documentação da modelagem e da rastreabilidade |
-| Pull Request | `[link]` | Integração das alterações da Sprint 3 |
-| Commit | `[link]` | ` ` |
+| Pull Request | [PR Sprint 3](https://github.com/lucasensousa/coleta-mais/pull/35) | Integração das alterações da Sprint 3 |
+| Commit | [Organiza pontos de coleta](https://github.com/lucasensousa/coleta-mais/commit/5057332250b71ed36a20e12a469852eef375a08e) | Organiza dados dos pontos de coleta |
 | Código/arquivo | [src/pontos.js](../../src/pontos.js) / [src/pontos.html](../../src/pontos.html) | Implementação do incremento do fluxo de consulta. |
 | Teste/captura/relatório | [Pontos de coleta](../modelagem/imagens/consulta-pontos.png) | Evidência visual da execução do fluxo de consulta. |
 
