@@ -28,7 +28,7 @@ sequenceDiagram
 
     Pontos->>Dados: Solicita dados dos pontos
     Dados-->>Pontos: Retorna pontos ativos
-    Pontos-->>Usuario: Exibe localização, materiais e horários
+    Pontos-->>Usuario: Exibe localização, materiais e horários e condições
 ```
 
 **Descrição e decisões representadas:** O modelo comportamental representa o fluxo principal de consulta de pontos de coleta do Coleta+.

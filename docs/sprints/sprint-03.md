@@ -19,11 +19,11 @@
 
 **Entrega esperada:** `docs/modelagem/modelagem.md`, ao menos um modelo comportamental e um estrutural, descrições e vínculo com requisitos.
 
-- [ ] Modelos legíveis e versionados no repositório.
-- [ ] Descrição textual da finalidade e decisões de cada modelo.
-- [ ] Requisitos ligados aos elementos dos modelos.
-- [ ] Backlog/requisitos refinados quando a modelagem revelar mudanças.
-- [ ] Links entre elementos modelados e código existente.
+- [ x ] Modelos legíveis e versionados no repositório.
+- [ x ] Descrição textual da finalidade e decisões de cada modelo.
+- [ x ] Requisitos ligados aos elementos dos modelos.
+- [ x ] Backlog/requisitos refinados quando a modelagem revelar mudanças.
+- [ x ] Links entre elementos modelados e código existente.
 
 ### Links dos artefatos
 
