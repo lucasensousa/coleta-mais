@@ -46,16 +46,16 @@ O incremento está relacionado principalmente aos requisitos RF-01, RF-02, RF-03
 
 ### Como executar e verificar
 
-Abrir o arquivo `src/index.html` em um navegador.
+Abrir o arquivo [index.html](../../src/index.html) em um navegador.
 Na página inicial, acessar a opção "Encontrar pontos de coleta" e verificar a página de pontos.
 
 | Requisito/Issue | Código ou protótipo | Evidência de execução |
 |---|---|---|
-| RF-01 / #33 | src/index.html / src/pontos.html / src/pontos.js | Fluxo de consulta dos pontos funcionando na aplicação. |
-| RF-02 / #33 | src/pontos.js / src/pontos.html | Materiais aceitos apresentados na página de pontos. |
-| RF-03 / #33 | src/pontos.js / src/pontos.html | Horários apresentados na página de pontos. |
-| RF-04 / #33 | src/pontos.js / src/pontos.html | Condições de entrega apresentadas na página de pontos. |
-| RF-05 / #33 | src/pontos.js / src/pontos.html | Endereço do ponto apresentado na aplicação. |
+| RF-01 / #33 | [index.html](../../src/index.html) / [pontos.html](../../src/pontos.html) / [pontos.js](../../src/pontos.js) | Fluxo de consulta dos pontos funcionando na aplicação. |
+| RF-02 / #33 | [pontos.js](../../src/pontos.js) / [pontos.html](../../src/pontos.html) | Materiais aceitos apresentados na página de pontos. |
+| RF-03 / #33 | [pontos.js](../../src/pontos.js) / [pontos.html](../../src/pontos.html) | Horários apresentados na página de pontos. |
+| RF-04 / #33 | [pontos.js](../../src/pontos.js) / [pontos.html](../../src/pontos.html) | Condições de entrega apresentadas na página de pontos. |
+| RF-05 / #33 | [pontos.js](../../src/pontos.js) / [pontos.html](../../src/pontos.html) | Endereço do ponto apresentado na aplicação. |
 
 ## 5. Scrum e gestão do trabalho — 0,50 ponto
 
@@ -85,24 +85,24 @@ Na página inicial, acessar a opção "Encontrar pontos de coleta" e verificar a
 | Issue | [#34](https://github.com/lucasensousa/coleta-mais/issues/34) | Documentação da modelagem e da rastreabilidade |
 | Pull Request | `[link]` | Integração das alterações da Sprint 3 |
 | Commit | `[link]` | ` ` |
-| Código/arquivo | src/pontos.js / src/pontos.html | Implementação do incremento do fluxo de consulta. |
+| Código/arquivo | [src/pontos.js](../../src/pontos.js) / [src/pontos.html](../../src/pontos.html) | Implementação do incremento do fluxo de consulta. |
 | Teste/captura/relatório | ` ` | Evidência visual da execução do fluxo de consulta. |
 
 ### Rastreabilidade resumida
 
 | Requisito | Issue | Artefato/modelo/decisão | Código | Teste/evidência |
 |---|---|---|---|---|
-| RF-01 | #31 / #33 | docs/modelagem/modelagem.md — modelo comportamental / PONTO_COLETA | src/index.html / src/pontos.html / src/pontos.js | Execução do fluxo de consulta dos pontos. |
-| RF-02 | #31 / #32 / #33 | docs/modelagem/modelagem.md — modelo estrutural / MATERIAL | src/pontos.html / src/pontos.js | Materiais apresentados na página de pontos. |
-| RF-03 | #31 / #32 / #33 | docs/modelagem/modelagem.md — modelo estrutural / HORARIO | src/pontos.html / src/pontos.js | Horários apresentados na página de pontos. |
-| RF-04 | #31 / #32 / #33 | docs/modelagem/modelagem.md — modelo estrutural / CONDICAO_ENTREGA | src/pontos.html / src/pontos.js | Condições de entrega apresentadas na página de pontos. |
-| RF-05 | #31 / #32 / #33 | docs/modelagem/modelagem.md — modelo comportamental / PONTO_COLETA | src/pontos.html / src/pontos.js | Endereço apresentado na aplicação; mapa ainda não implementado. |
-| RF-07 | #32 | docs/modelagem/modelagem.md — PONTO_COLETA | Não implementado nesta sprint | Ainda não aplicável nesta sprint |
-| RF-08 | #32 | docs/modelagem/modelagem.md — PONTO_COLETA | Não implementado nesta sprint | Ainda não aplicável nesta sprint |
-| RF-09 | #32 | docs/modelagem/modelagem.md — PONTO_COLETA.ativo | src/pontos.js possui o atributo status e filtra pontos ativos | Evidência no fluxo atual; persistência ainda não implementada. |
-| RF-10 | #32 | docs/modelagem/modelagem.md — MATERIAL | src/pontos.js | Estrutura representada no código; gerenciamento administrativo ainda não implementado. |
-| RF-11 | #32 | docs/modelagem/modelagem.md — HORARIO | src/pontos.js | Estrutura representada no código; gerenciamento administrativo ainda não implementado. |
-| RF-12 | #32 | docs/modelagem/modelagem.md — CONDICAO_ENTREGA | src/pontos.js | Estrutura representada no código; gerenciamento administrativo ainda não implementado. |
+| RF-01 | #31 / #33 | [modelo comportamental / PONTO_COLETA](../modelagem/modelagem.md) | [index.html](../../src/index.html) / [src/pontos.html](../../src/pontos.html) / [src/pontos.js](../../src/pontos.js) | Execução do fluxo de consulta dos pontos. |
+| RF-02 | #31 / #32 / #33 | [modelo estrutural / MATERIAL](../modelagem/modelagem.md) | [src/pontos.html](../../src/pontos.html) / [src/pontos.js](../../src/pontos.js) | Materiais apresentados na página de pontos. |
+| RF-03 | #31 / #32 / #33 | [modelo estrutural / HORARIO](../modelagem/modelagem.md) | [src/pontos.html](../../src/pontos.html) / [src/pontos.js](../../src/pontos.js) | Horários apresentados na página de pontos. |
+| RF-04 | #31 / #32 / #33 | [modelo estrutural / CONDICAO_ENTREGA](../modelagem/modelagem.md) | [src/pontos.html](../../src/pontos.html) / [src/pontos.js](../../src/pontos.js) | Condições de entrega apresentadas na página de pontos. |
+| RF-05 | #31 / #32 / #33 | [modelo comportamental / PONTO_COLETA](../modelagem/modelagem.md) | [src/pontos.html](../../src/pontos.html) / [src/pontos.js](../../src/pontos.js) | Endereço apresentado na aplicação; mapa ainda não implementado. |
+| RF-07 | #32 | [PONTO_COLETA](../modelagem/modelagem.md) | Não implementado nesta sprint | Ainda não aplicável nesta sprint |
+| RF-08 | #32 | [PONTO_COLETA](../modelagem/modelagem.md) | Não implementado nesta sprint | Ainda não aplicável nesta sprint |
+| RF-09 | #32 | [PONTO_COLETA.ativo](../modelagem/modelagem.md) | [src/pontos.js](../../src/pontos.js) possui o atributo status e filtra pontos ativos | Evidência no fluxo atual; persistência ainda não implementada. |
+| RF-10 | #32 | [MATERIAL](../modelagem/modelagem.md) | [src/pontos.js](../../src/pontos.js) | Estrutura representada no código; gerenciamento administrativo ainda não implementado. |
+| RF-11 | #32 | [HORARIO](../modelagem/modelagem.md) | [src/pontos.js](../../src/pontos.js) | Estrutura representada no código; gerenciamento administrativo ainda não implementado. |
+| RF-12 | #32 | [CONDICAO_ENTREGA](../modelagem/modelagem.md) | [src/pontos.js](../../src/pontos.js) | Estrutura representada no código; gerenciamento administrativo ainda não implementado. |
 
 ## 7. Revisão do incremento
 

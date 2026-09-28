@@ -9,7 +9,7 @@
 | Fluxo de consulta de pontos de coleta | Comportamental |  Como ocorre a consulta dos pontos de coleta pelo usuário? | RF-01, RF-02, RF-03, RF-04, RF-05 |
 | Modelo de domínio dos pontos de coleta | Estrutural | Como os principais elementos envolvidos nos pontos de coleta se relacionam? | RF-01, RF-02, RF-03, RF-04, RF-05, RF-07, RF-08, RF-09, RF-10, RF-11, RF-12 |
 
-## 2. Exemplo de modelo comportamental em Mermaid
+## 2. Modelo comportamental em Mermaid
 
 > Substitua pelo modelo real. O Mermaid é renderizado pelo GitHub e permanece versionado junto ao projeto.
 
@@ -37,7 +37,7 @@ O usuário inicia o fluxo pela página inicial e seleciona a opção para encont
 
 O modelo foi definido dessa forma porque representa o fluxo atualmente implementado no protótipo e permite relacionar diretamente os requisitos de consulta aos elementos da aplicação.
 
-## 3. Exemplo de modelo estrutural em Mermaid
+## 3. Modelo estrutural em Mermaid
 
 ```mermaid
 classDiagram
@@ -110,15 +110,15 @@ A modelagem foi mantida em nível conceitual para representar o domínio da solu
 
 | Elemento modelado | Arquivo/diretório correspondente | Observação |
 |---|---|---|
-| **Usuário** | src/index.html | Representa o ator que inicia a consulta dos pontos de coleta |
-| **Administrador** | docs/requisitos/requisitos.md | Perfil responsável pelo gerenciamento dos pontos e informações associadas, previsto nos requisitos e representado no modelo estrutural |
-| **Página Inicial** | src/index.html | Página utilizada para iniciar o fluxo de consulta |
-| **Página de Pontos** | src/pontos.html | Página utilizada para apresentar os pontos de coleta |
-| **Estrutura de dados dos pontos** | src/pontos.js | Contém a estrutura organizada dos pontos de coleta e suas informações associadas. |
-| **PONTO_COLETA** | src/pontos.js | Representado pelos objetos da estrutura pontosColeta. |
-| **MATERIAL** | src/pontos.js | Representado pela propriedade materiais de cada ponto de coleta. |
-| **HORARIO** | src/pontos.js | Representado pela propriedade horarios de cada ponto de coleta. |
-| **CONDICAO_ENTREGA** | src/pontos.js | Representado pela propriedade condicoes de cada ponto de coleta e exibido na interface. |
+| **Usuário** | [index.html](../../src/index.html) | Representa o ator que inicia a consulta dos pontos de coleta |
+| **Administrador** | [requisitos.md](../requisitos/requisitos.md) | Perfil responsável pelo gerenciamento dos pontos e informações associadas, previsto nos requisitos e representado no modelo estrutural |
+| **Página Inicial** | [index.html](../../src/index.html) | Página utilizada para iniciar o fluxo de consulta |
+| **Página de Pontos** | [pontos.html](../../src/pontos.html) | Página utilizada para apresentar os pontos de coleta |
+| **Estrutura de dados dos pontos** | [pontos.js](../../src/pontos.js) | Contém a estrutura organizada dos pontos de coleta e suas informações associadas. |
+| **PONTO_COLETA** | [pontos.js](../../src/pontos.js) | Representado pelos objetos da estrutura pontosColeta. |
+| **MATERIAL** | [pontos.js](../../src/pontos.js) | Representado pela propriedade materiais de cada ponto de coleta. |
+| **HORARIO** | [pontos.js](../../src/pontos.js) | Representado pela propriedade horarios de cada ponto de coleta. |
+| **CONDICAO_ENTREGA** | [pontos.js](../../src/pontos.js) | Representado pela propriedade condicoes de cada ponto de coleta e exibido na interface. |
 
 ## 6. Refinamentos identificados
 
