@@ -7,7 +7,7 @@
 | Modelo | Tipo | Pergunta que ele ajuda a responder | Requisitos relacionados |
 |---|---|---|---|
 | Fluxo de consulta de pontos de coleta | Comportamental |  Como ocorre a consulta dos pontos de coleta pelo usuário? | RF-01, RF-02, RF-03, RF-04, RF-05 |
-| `[Nome]` | Estrutural | `[Como dados ou elementos se relacionam?]` | `RF-XX` |
+| Modelo de domínio dos pontos de coleta | Estrutural | Como os principais elementos envolvidos nos pontos de coleta se relacionam? | RF-01, RF-02, RF-03, RF-04, RF-05, RF-07, RF-08, RF-09, RF-10, RF-11, RF-12 |
 
 ## 2. Exemplo de modelo comportamental em Mermaid
 
@@ -40,57 +40,92 @@ O modelo foi definido dessa forma porque representa o fluxo atualmente implement
 ## 3. Exemplo de modelo estrutural em Mermaid
 
 ```mermaid
-erDiagram
-    USUARIO ||--o{ SOLICITACAO : cria
-    USUARIO {
-        int id
-        string nome
-        string email
+classDiagram
+
+    class Usuario {
+        +consultarPontos()
+        +visualizarPonto()
     }
-    SOLICITACAO {
-        int id
-        string status
-        datetime criadaEm
+
+    class Administrador {
+        +gerenciarPontos()
+        +gerenciarMateriais()
+        +gerenciarHorarios()
+        +gerenciarCondicoes()
     }
+
+    class PontoColeta {
+        nome
+        endereco
+        status
+    }
+
+    class Material {
+        nome
+    }
+
+    class Horario {
+        diaSemana
+        horario
+    }
+
+    class CondicaoEntrega {
+        descricao
+    }
+
+    Usuario "0..*" --> "0..*" PontoColeta : consulta
+    Administrador "1" --> "0..*" PontoColeta : gerencia
+    PontoColeta "1" --> "0..*" Material : aceita
+    PontoColeta "1" --> "0..*" Horario : possui
+    PontoColeta "1" --> "0..*" CondicaoEntrega : possui
 ```
 
-**Descrição e decisões representadas:** `[PREENCHER]`
+**Descrição e decisões representadas:** O modelo estrutural representa, em nível conceitual, os principais elementos envolvidos na organização das informações do Coleta+ e as relações existentes entre eles.
+
+Usuario representa o perfil responsável pela consulta dos pontos de coleta. Administrador representa o perfil responsável pelo gerenciamento das informações disponibilizadas pela aplicação.
+
+PontoColeta representa o local destinado ao recebimento de lixo eletrônico. Material representa os materiais aceitos por um ponto de coleta. Horario representa os horários de funcionamento e CondicaoEntrega representa as condições relacionadas à entrega dos materiais.
+
+O modelo indica que usuários podem consultar pontos de coleta, enquanto administradores são responsáveis pelo gerenciamento dessas informações. Um ponto de coleta pode estar associado a diferentes materiais, horários e condições de entrega.
+
+A modelagem foi mantida em nível conceitual para representar o domínio da solução sem antecipar decisões específicas de implementação, como banco de dados, API, tecnologias de backend ou estrutura final de classes.
 
 ## 4. Relação entre requisitos e modelos
 
 | Requisito | Elemento do modelo | Como está representado | Alteração provocada no backlog/código |
 |---|---|---|---|
-| **RF-01** | PONTO_COLETA | Representa os pontos de coleta consultados pelo usuário | #31, #32, #33 |
-| **RF-02** | MATERIAL | Representa os materiais aceitos por cada ponto |  #32, #33  |
-| **RF-03** | HORARIO | Representa os horários de funcionamento do ponto |  #32, #33  |
-| **RF-04** | CONDICAO_ENTREGA | Representa as condições de entrega associadas ao ponto | #32, #33 |
-| **RF-05** | PONTO_COLETA | O endereço representa a localização do ponto | #31, #32 e #33 |
-| **RF-07** | PONTO_COLETA | Representa a estrutura necessária para cadastro de um ponto | #32 |
-| **RF-08** | PONTO_COLETA | Representa os dados que podem ser alterados | #32 |
-| **RF-09** | PONTO_COLETA.ativo | O atributo ativo representa a situação do ponto | #32, #33 |
-| **RF-10** | MATERIAL | Representa os materiais associados aos pontos | #32 |
-| **RF-11** | HORARIO | Representa os horários associados aos pontos | #32 |
-| **RF-12** | CONDICAO_ENTREGA | Representa as condições associadas aos pontos | #32 |
+| RF-01 | Usuario / PontoColeta | Usuário consulta os pontos de coleta disponíveis | #31 / #33 |
+| RF-02 | Material | Materiais aceitos são representados como elementos associados ao ponto | #32 / #33 |
+| RF-03 | Horario | Horários de funcionamento são representados como elementos associados ao ponto | #32 / #33 |
+| RF-04| CondicaoEntrega | Condições de entrega são representadas como elementos associados ao ponto | #32 / #33 |
+| RF-05 | PontoColeta | A localização é representada pelo elemento PontoColeta | #31 / #32 / #33 |
+| RF-07 | Administrador / PontoColeta | Administrador gerencia o cadastro de pontos de coleta | #32 |
+| RF-08 | Administrador / PontoColeta | Administrador gerencia as informações dos pontos | #32 |
+| RF-09 | PontoColeta | O estado do ponto é representado pelo atributo status | #32 / #33 |
+| RF-10 | Administrador / Material | Administrador gerencia os materiais associados aos pontos | #32 |
+| RF-11 | Administrador / Horario | Administrador gerencia os horários associados aos pontos | #32 |
+| RF-12 | Administrador / CondicaoEntrega | Administrador gerencia as condições associadas aos pontos | #32 |
 
 ## 5. Correspondência entre modelo e código
 
 | Elemento modelado | Arquivo/diretório correspondente | Observação |
 |---|---|---|
 | **Usuário** | src/index.html | Representa o ator que inicia a consulta dos pontos de coleta |
+| **Administrador** | docs/requisitos/requisitos.md | Perfil responsável pelo gerenciamento dos pontos e informações associadas, previsto nos requisitos e representado no modelo estrutural |
 | **Página Inicial** | src/index.html | Página utilizada para iniciar o fluxo de consulta |
 | **Página de Pontos** | src/pontos.html | Página utilizada para apresentar os pontos de coleta |
 | **Estrutura de dados dos pontos** | src/pontos.html | Os dados dos pontos estão atualmente representados na própria página |
 | **PONTO_COLETA** | src/pontos.html | Os pontos de coleta apresentados na aplicação |
 | **MATERIAL** | src/pontos.html | Materiais aceitos apresentados para cada ponto |
 | **HORARIO** | src/pontos.html | Horários de funcionamento apresentados para cada ponto |
-| **CONDICAO_ENTREGA** | src/pontos.html | Elemento previsto no modelo para representar as condições de entrega |
+| **CONDICAO_ENTREGA** | docs/requisitos/requisitos.md | Elemento previsto nos requisitos e representado no modelo; ainda não possui representação correspondente na interface atual |
 
 ## 6. Refinamentos identificados
 
 - Fluxo de consulta: O fluxo de consulta foi detalhado para representar a navegação entre a página inicial e a página de pontos.
 - Organização de dados: A modelagem evidenciou a necessidade de organizar os dados dos pontos de forma estruturada para facilitar a evolução da aplicação nas próximas sprints.
-- Disponibilidade do ponto: O atributo ativo foi incluído no modelo estrutural para representar a disponibilidade do ponto de coleta conforme a regra de negócio RN-02.
-
+- O atributo status foi incluído em PontoColeta para representar conceitualmente a situação de disponibilidade do ponto.
+- A modelagem estrutural foi mantida em nível conceitual para evitar antecipar decisões de implementação que serão tratadas nas próximas etapas do projeto.
 ## 7. Histórico de atualização
 
 | Sprint | Modelo alterado | Motivo | Evidência |
