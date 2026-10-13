@@ -1,0 +1,80 @@
+{
+  "brand": {
+    "name": "Coleta+",
+    "subtitle": "Lavras / UFLA",
+    "sustainableFooterTitle": "Descarte Sustentável",
+    "sustainableFooterDesc": "Juntos por uma Lavras mais limpa e ecológica."
+  },
+  "nav": {
+    "sectionTitle": "MENU PRINCIPAL",
+    "home": "Início",
+    "collectionPoints": "Pontos de Coleta",
+    "history": "Histórico",
+    "reports": "Relatórios",
+    "about": "Sobre o Projeto",
+    "soon": "Em breve"
+  },
+  "home": {
+    "badge": "Lavras Sustentável",
+    "title": "Bem-vindo ao Coleta+",
+    "description": "Encontre pontos de coleta de lixo eletrônico em Lavras de forma simples, rápida e consciente. Ajude a preservar o meio ambiente descartando seus aparelhos no local correto.",
+    "ctaPoints": "Encontrar pontos de coleta",
+    "ctaAbout": "Saiba mais",
+    "cards": {
+      "find": {
+        "title": "Encontre um ponto de coleta",
+        "description": "Consulte os locais disponíveis na cidade de Lavras, materiais aceitos por cada ecoponto e orientações para o descarte adequado.",
+        "link": "Ver catálogo de locais"
+      },
+      "safe": {
+        "title": "Descarte Seguro",
+        "description": "Baterias, pilhas e computadores contêm metais pesados tóxicos. O descarte correto evita a contaminação do solo e lençóis freáticos."
+      },
+      "community": {
+        "title": "Parceria Comunitária",
+        "description": "Iniciativa em cooperação com estudantes e comunidade da UFLA para incentivar a reciclagem tecnológica na nossa região."
+      }
+    }
+  },
+  "points": {
+    "categoryBadge": "Catálogo de Locais",
+    "title": "Pontos de Coleta",
+    "description": "Consulte os pontos disponíveis para descarte ambientalmente correto de lixo eletrônico em Lavras - MG.",
+    "searchPlaceholder": "Buscar por nome, endereço ou material...",
+    "filterMaterialLabel": "Filtrar por material:",
+    "allMaterials": "Todos os materiais",
+    "activePointsCount": "Exibindo {{count}} ponto(s) ativo(s)",
+    "emptyTitle": "Nenhum ponto de coleta encontrado",
+    "emptyDesc": "Tente ajustar sua busca ou limpar os filtros aplicados.",
+    "clearFilters": "Limpar Filtros",
+    "statusActive": "Ativo",
+    "location": "Localização",
+    "hours": "Horário de Funcionamento",
+    "contact": "Contato",
+    "acceptedMaterials": "Materiais Aceitos",
+    "conditions": "Condições"
+  },
+  "about": {
+    "categoryBadge": "Projeto Extensionista",
+    "title": "Sobre o Coleta+",
+    "description": "Promovendo a conscientização e facilitando o descarte correto de resíduos eletroeletrônicos no município de Lavras - MG.",
+    "missionTitle": "Missão do Projeto",
+    "missionP1": "O lixo eletrônico cresce a passos acelerados com a rápida substituição de equipamentos tecnológicos. O projeto Coleta+ surgiu com o objetivo de aproximar a comunidade de Lavras e os estudantes da UFLA dos postos de descarte ambientalmente responsáveis.",
+    "missionP2": "Aqui você encontra locais mapeados, orientações sobre separação segura de materiais perigosos (como baterias de lítio e placas-mãe) e horários de funcionamento atualizados.",
+    "uflaCardTitle": "Universidade Federal de Lavras",
+    "uflaCardDesc": "Desenvolvido com foco no impacto social e ambiental em conjunto com a comunidade universitária da UFLA.",
+    "sustainabilityCardTitle": "Sustentabilidade",
+    "sustainabilityCardDesc": "Economia circular, descarte orientado e preservação dos recursos hídricos e ecológicos do município."
+  },
+  "placeholders": {
+    "futureModule": "Módulo Futuro",
+    "historyTitle": "Histórico de Descartes",
+    "historyDesc": "Acompanhe o registro dos descartes realizados em breve.",
+    "historyDetails": "Este recurso permitirá aos usuários cadastrados registrarem descartes e acompanharem métricas ecológicas acumuladas.",
+    "reportsTitle": "Relatórios Ambientais",
+    "reportsDesc": "Dados analíticos sobre o volume de descarte em Lavras.",
+    "reportsDetails": "Gráficos e estatísticas de volume de lixo eletrônico coletado e reciclado em parceria com cooperativas locais.",
+    "inDevelopment": "Funcionalidade em Desenvolvimento",
+    "comingSoon": "Em Breve"
+  }
+}
