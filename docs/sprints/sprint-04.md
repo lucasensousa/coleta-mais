@@ -2,7 +2,7 @@
 
 - **Data de entrega:** 13/10/2026
 - **Pontuação:** 2,5 pontos
-- **Tag obrigatória:** `sprint-04`
+- **Tag obrigatória:** [sprint-04](https://github.com/lucasensousa/coleta-mais/releases/tag/sprint-04)
 - **Responsável por conferir este arquivo:** [@lucasensousa](http://github.com/lucasensousa)
 
 ## 1. Pergunta que esta sprint deve responder
@@ -31,8 +31,8 @@ A migração do frontend de HTML, CSS e JavaScript para React representa a refat
 
 | Artefato criado/atualizado | Link na tag da sprint | O que mudou |
 |---|---|---|
-| Decisões de projeto | `[link]` | Registra contexto, alternativas, decisão, justificativa e consequências |
-| Modelagem do sistema | [docs/modelagem/modelagem.md](../modelagem/modelagem.md) | Atualização dos modelos e da correspondência entre a modelagem e os módulos atuais do frontend React/TypeScript. |
+| Decisões de projeto | [decisoes-de-projeto.md](https://github.com/lucasensousa/coleta-mais/blob/sprint-04/docs/projeto/decisoes-de-projeto.md) | Registra contexto, alternativas, decisão, justificativa e consequências |
+| Modelagem do sistema | [docs/modelagem/modelagem.md](https://github.com/lucasensousa/coleta-mais/blob/sprint-04/docs/modelagem/modelagem.md) | Atualização dos modelos e da correspondência entre a modelagem e os módulos atuais do frontend React/TypeScript. |
 
 ## 4. Incremento da aplicação web — 0,75 ponto
 
@@ -90,7 +90,7 @@ Abra o endereço local indicado pelo Vite e confira a página de consulta dos po
 | Issue | [#37 — T-06](https://github.com/lucasensousa/coleta-mais/issues/37) | Refatoração do frontend |
 | Issue |  [#38 — D-06](https://github.com/lucasensousa/coleta-mais/issues/38) | Atualização da documentação |
 | Issue | [#39 - D-07](https://github.com/lucasensousa/coleta-mais/issues/39) | Atualização [modelagem.md](../modelagem/modelagem.md) |
-| Pull Request | `[link]` | `[PREENCHER]` |
+| Pull Request | [PR sprint 4](https://github.com/lucasensousa/coleta-mais/pull/40) | Integração das alterações sprint 4 |
 | Commit | [3e2ee1b — Início da Sprint 4](https://github.com/lucasensousa/coleta-mais/commit/3e2ee1bf65ad36ded921f9ceb82a625de4ab2ebf), [b8725bb — Decisões de projeto](https://github.com/lucasensousa/coleta-mais/commit/b8725bbe1bf482994ccdc5020e4ac9b109d2b278), [35c124a — Estrutura React](https://github.com/lucasensousa/coleta-mais/commit/35c124a) | Histórico de criação da documentação e estruturação do frontend em React. |
 | Código/arquivo | [Decisões de projeto](https://github.com/lucasensousa/coleta-mais/blob/main/docs/projeto/decisoes-de-projeto.md), [Frontend](https://github.com/lucasensousa/coleta-mais/tree/main/frontend) | Documentação das decisões adotadas e código da aplicação organizado em módulos. |
 | Teste/captura/relatório | [Consulta de pontos](../modelagem/imagens/consulta-pontos.png)| Atualização da página de consulta dos pontos de coleta |
@@ -124,6 +124,6 @@ Abra o endereço local indicado pelo Vite e confira a página de consulta dos po
 
 ## 10. Links enviados no UFLA Virtual
 
-- **Tag `sprint-04`:** `[COLAR LINK]`
-- **Este arquivo na tag:** `[COLAR LINK]`
+- **Tag `sprint-04`:** [sprint-04](https://github.com/lucasensousa/coleta-mais/releases/tag/sprint-04)
+- **Este arquivo na tag:** [sprint-04](https://github.com/lucasensousa/coleta-mais/blob/sprint-04/docs/sprints/sprint-04.md)
 - **Observação adicional:** Sem observação adicional.
