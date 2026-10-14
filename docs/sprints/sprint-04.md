@@ -32,6 +32,7 @@ A migração do frontend de HTML, CSS e JavaScript para React representa a refat
 | Artefato criado/atualizado | Link na tag da sprint | O que mudou |
 |---|---|---|
 | Decisões de projeto | `[link]` | Registra contexto, alternativas, decisão, justificativa e consequências |
+| Modelagem do sistema | [docs/modelagem/modelagem.md](../modelagem/modelagem.md) | Atualização dos modelos e da correspondência entre a modelagem e os módulos atuais do frontend React/TypeScript. |
 
 ## 4. Incremento da aplicação web — 0,75 ponto
 
@@ -72,6 +73,7 @@ Abra o endereço local indicado pelo Vite e confira a página de consulta dos po
 | [#36](https://github.com/lucasensousa/coleta-mais/issues/36)  | Registrar as principais decisões de projeto propostas no desenvolvimento do Coleta+ | @lucasensousa | Apresentar pelo menos três decisões, cada uma com contexto, alternativas, decisão adotada, justificativa e consequências, relacionadas à implementação real. | Concluída |
 | [#37](https://github.com/lucasensousa/coleta-mais/issues/37) | Refatorar o frontend e separar responsabilidades entre página, componentes, dados e tipos | @ThawanVCSantos | Código organizado em módulos separados, funcionalidades de consulta preservadas e execução validada por build e lint. | Concluída |
 | [#38](https://github.com/lucasensousa/coleta-mais/issues/38) | Atualizar a documentação e a rastreabilidade da Sprint 4 | @lucasensousa | Documento da sprint, Product Backlog e tabela de rastreabilidade atualizados, com links para Issues, arquivos, commits e evidências. | Concluída |
+| [#39](https://github.com/lucasensousa/coleta-mais/issues/39) | Atualizar a modelagem para refletir a implementação atual em React/TypeScript | @lucasensousa | Modelagem comportamental e estrutural, caminhos dos arquivos, rastreabilidade dos requisitos e histórico revisados conforme a implementação atual. | Concluido |
 
 ### Acompanhamento
 
@@ -87,10 +89,11 @@ Abra o endereço local indicado pelo Vite e confira a página de consulta dos po
 | Issue | [#36 — D-05](https://github.com/lucasensousa/coleta-mais/issues/36) |  Registro das tarefas de decisões de projeto` |
 | Issue | [#37 — T-06](https://github.com/lucasensousa/coleta-mais/issues/37) | Refatoração do frontend |
 | Issue |  [#38 — D-06](https://github.com/lucasensousa/coleta-mais/issues/38) | Atualização da documentação |
+| Issue | [#39 - D-07](https://github.com/lucasensousa/coleta-mais/issues/39) | Atualização [modelagem.md](../modelagem/modelagem.md) |
 | Pull Request | `[link]` | `[PREENCHER]` |
 | Commit | [3e2ee1b — Início da Sprint 4](https://github.com/lucasensousa/coleta-mais/commit/3e2ee1bf65ad36ded921f9ceb82a625de4ab2ebf), [b8725bb — Decisões de projeto](https://github.com/lucasensousa/coleta-mais/commit/b8725bbe1bf482994ccdc5020e4ac9b109d2b278), [35c124a — Estrutura React](https://github.com/lucasensousa/coleta-mais/commit/35c124a) | Histórico de criação da documentação e estruturação do frontend em React. |
 | Código/arquivo | [Decisões de projeto](https://github.com/lucasensousa/coleta-mais/blob/main/docs/projeto/decisoes-de-projeto.md), [Frontend](https://github.com/lucasensousa/coleta-mais/tree/main/frontend) | Documentação das decisões adotadas e código da aplicação organizado em módulos. |
-| Teste/captura/relatório |
+| Teste/captura/relatório | [Consulta de pontos](../modelagem/imagens/consulta-pontos.png)| Atualização da página de consulta dos pontos de coleta |
 
 ### Rastreabilidade resumida
 
