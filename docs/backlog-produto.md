@@ -112,6 +112,3 @@ Um item está concluído quando:
 | Sprint 2 | Inclusão dos `RNF-01` a `RNF-06` | Registrar requisitos não funcionais relacionados à qualidade e às restrições da aplicação | `docs/requisitos/requisitos.md` e Issues `#23` a `#28` |
 | Sprint 3 | Inclusão das tarefas `T-03`, `T-04`, `T-05` e documentação `D-04` | Registrar as atividades de modelagem, evolução da implementação e rastreabilidade identificadas para a Sprint 3 | Issues `#31` a `#34` e GitHub Project |
 | Sprint 4 | inclusão da tarefa T-06 e documentação D-05 e D-06 | Registrar as decisões locais de projeto, formalizar a refatoração do frontend e atualizar a documentação para refletir a implementação atual, promovendo a separação de responsabilidades, a modularidade e a rastreabilidade das alterações realizadas. | Issues `#36` a `#38` e GitHub Project|
-
-
- 
