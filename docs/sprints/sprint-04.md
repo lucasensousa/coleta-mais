@@ -3,7 +3,7 @@
 - **Data de entrega:** 13/10/2026
 - **Pontuação:** 2,5 pontos
 - **Tag obrigatória:** `sprint-04`
-- **Responsável por conferir este arquivo:** `[PREENCHER]`
+- **Responsável por conferir este arquivo:** [@lucasensousa](http://github.com/lucasensousa)
 
 ## 1. Pergunta que esta sprint deve responder
 
@@ -19,7 +19,7 @@ A migração do frontend de HTML, CSS e JavaScript para React representa a refat
 
 ## 3. Checklist do artefato central — 0,75 ponto
 
-**Entrega esperada:** `docs/projeto/decisoes-de-projeto.md`, decomposição e decisões relacionadas a coesão, acoplamento, responsabilidade e testabilidade.
+**Entrega esperada:** docs/projeto/decisoes-de-projeto.md, decomposição e decisões relacionadas a coesão, acoplamento, responsabilidade e testabilidade.
 
 - [ x ] Responsabilidades de módulos/componentes locais identificadas.
 - [ x ] Alternativas consideradas e decisão justificada.
@@ -32,6 +32,7 @@ A migração do frontend de HTML, CSS e JavaScript para React representa a refat
 | Artefato criado/atualizado | Link na tag da sprint | O que mudou |
 |---|---|---|
 | Decisões de projeto | `[link]` | Registra contexto, alternativas, decisão, justificativa e consequências |
+| Modelagem do sistema | [docs/modelagem/modelagem.md](../modelagem/modelagem.md) | Atualização dos modelos e da correspondência entre a modelagem e os módulos atuais do frontend React/TypeScript. |
 
 ## 4. Incremento da aplicação web — 0,75 ponto
 
@@ -60,7 +61,8 @@ Abra o endereço local indicado pelo Vite e confira a página de consulta dos po
 
 | Requisito/Issue | Código ou protótipo | Evidência de execução |
 |---|---|---|
-| `RF-XX / #XX` | `[link]` | `[link]` |
+| RF-01 / [US-01 (#1)](https://github.com/lucasensousa/coleta-mais/issues/1) / [T-06 (#36)](https://github.com/lucasensousa/coleta-mais/issues/37) | [Frontend React/TypeScript](https://github.com/lucasensousa/coleta-mais/tree/main/frontend) | Captura da consulta de pontos |
+| RF-02 / [US-02 (#2)](https://github.com/lucasensousa/coleta-mais/issues/2) / [T-06 (#36)](https://github.com/lucasensousa/coleta-mais/issues/37) | [Frontend React/TypeScript](https://github.com/lucasensousa/coleta-mais/tree/main/frontend) | Captura dos pontos e materiais aceitos |
 
 ## 5. Scrum e gestão do trabalho — 0,50 ponto
 
@@ -68,30 +70,37 @@ Abra o endereço local indicado pelo Vite e confira a página de consulta dos po
 
 | Issue | Descrição | Responsável | Critério de aceitação/conclusão | Situação |
 |---|---|---|---|---|
-| `#XX` | `[PREENCHER]` | `@usuario` | `[PREENCHER]` | Concluída/Pendente |
+| [#36](https://github.com/lucasensousa/coleta-mais/issues/36)  | Registrar as principais decisões de projeto propostas no desenvolvimento do Coleta+ | @lucasensousa | Apresentar pelo menos três decisões, cada uma com contexto, alternativas, decisão adotada, justificativa e consequências, relacionadas à implementação real. | Concluída |
+| [#37](https://github.com/lucasensousa/coleta-mais/issues/37) | Refatorar o frontend e separar responsabilidades entre página, componentes, dados e tipos | @ThawanVCSantos | Código organizado em módulos separados, funcionalidades de consulta preservadas e execução validada por build e lint. | Concluída |
+| [#38](https://github.com/lucasensousa/coleta-mais/issues/38) | Atualizar a documentação e a rastreabilidade da Sprint 4 | @lucasensousa | Documento da sprint, Product Backlog e tabela de rastreabilidade atualizados, com links para Issues, arquivos, commits e evidências. | Concluída |
+| [#39](https://github.com/lucasensousa/coleta-mais/issues/39) | Atualizar a modelagem para refletir a implementação atual em React/TypeScript | @lucasensousa | Modelagem comportamental e estrutural, caminhos dos arquivos, rastreabilidade dos requisitos e histórico revisados conforme a implementação atual. | Concluido |
 
 ### Acompanhamento
 
-- **GitHub Project:** `[link filtrado ou visão da sprint]`
-- **Reuniões/decisões:** `[links para docs/reunioes/]`
-- **Impedimentos:** `Nenhum
+- **GitHub Project:** [Projeto](https://github.com/users/lucasensousa/projects/2)
+- **Reuniões/decisões:** 
+- **Impedimentos:** Nenhum
 - **Mudanças de escopo:** Nenhuma
 
 ## 6. GitHub, documentação e rastreabilidade — 0,50 ponto
 
 | Tipo de evidência | Link | O que comprova |
 |---|---|---|
-| Issue | `[link]` | `[PREENCHER]` |
+| Issue | [#36 — D-05](https://github.com/lucasensousa/coleta-mais/issues/36) |  Registro das tarefas de decisões de projeto` |
+| Issue | [#37 — T-06](https://github.com/lucasensousa/coleta-mais/issues/37) | Refatoração do frontend |
+| Issue |  [#38 — D-06](https://github.com/lucasensousa/coleta-mais/issues/38) | Atualização da documentação |
+| Issue | [#39 - D-07](https://github.com/lucasensousa/coleta-mais/issues/39) | Atualização [modelagem.md](../modelagem/modelagem.md) |
 | Pull Request | `[link]` | `[PREENCHER]` |
-| Commit | `[link]` | `[PREENCHER]` |
-| Código/arquivo | `[link]` | `[PREENCHER]` |
-| Teste/captura/relatório | `[link]` | `[PREENCHER]` |
+| Commit | [3e2ee1b — Início da Sprint 4](https://github.com/lucasensousa/coleta-mais/commit/3e2ee1bf65ad36ded921f9ceb82a625de4ab2ebf), [b8725bb — Decisões de projeto](https://github.com/lucasensousa/coleta-mais/commit/b8725bbe1bf482994ccdc5020e4ac9b109d2b278), [35c124a — Estrutura React](https://github.com/lucasensousa/coleta-mais/commit/35c124a) | Histórico de criação da documentação e estruturação do frontend em React. |
+| Código/arquivo | [Decisões de projeto](https://github.com/lucasensousa/coleta-mais/blob/main/docs/projeto/decisoes-de-projeto.md), [Frontend](https://github.com/lucasensousa/coleta-mais/tree/main/frontend) | Documentação das decisões adotadas e código da aplicação organizado em módulos. |
+| Teste/captura/relatório | [Consulta de pontos](../modelagem/imagens/consulta-pontos.png)| Atualização da página de consulta dos pontos de coleta |
 
 ### Rastreabilidade resumida
 
 | Requisito | Issue | Artefato/modelo/decisão | Código | Teste/evidência |
 |---|---|---|---|---|
-| `RF-XX` | `#XX` | `[link]` | `[link]` | `[link ou ainda não aplicável]` |
+| RF-01 — Consultar pontos de coleta | [US-01 / #1](https://github.com/lucasensousa/coleta-mais/issues/1) e [T-06 / #37](https://github.com/lucasensousa/coleta-mais/issues/37) | [Decisões de projeto — DP-01 e DP-02](../projeto/decisoes-de-projeto.md) | [Página de consulta](../../frontend/src/routes/pontos/index.tsx) e [CollectionPointCard](../../frontend/src/components/pontos/CollectionPointCard.tsx) | Página de consulta criada |
+| RF-02 — Consultar materiais aceitos | [US-02 / #2](https://github.com/lucasensousa/coleta-mais/issues/2) e [T-06 / #37](https://github.com/lucasensousa/coleta-mais/issues/37) | [Decisões de projeto — DP-01 e DP-03](../projeto/decisoes-de-projeto.md) | [Página de consulta](../../frontend/src/routes/pontos/index.tsx), [dados de demonstração](../../frontend/src/data/collectionPointsMock.ts) e [tipos](../../frontend/src/types/collectionPoint.ts) | Página de consulta criada |
 
 ## 7. Revisão do incremento
 

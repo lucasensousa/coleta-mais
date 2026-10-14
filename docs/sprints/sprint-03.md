@@ -3,7 +3,7 @@
 - **Data de entrega:** 28/09/2026
 - **Pontuação:** 2,5 pontos
 - **Tag obrigatória:** [sprint-03](https://github.com/lucasensousa/coleta-mais/releases/tag/sprint-03)
-- **Responsável por conferir este arquivo:** @lucasensousa
+- **Responsável por conferir este arquivo:** [@lucasensousa](http://github.com/lucasensousa)
 
 ## 1. Pergunta que esta sprint deve responder
 
