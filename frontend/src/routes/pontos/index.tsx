@@ -13,6 +13,9 @@ import { CollectionPointCard } from '@/components/pontos/CollectionPointCard'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+import {
+  filterCollectionPoints,
+} from '@/strategies/collectionPointFilterStrategies'
 
 export const Route = createFileRoute('/pontos/')({
   component: CollectionPointsComponent,
@@ -35,9 +38,10 @@ function CollectionPointsComponent() {
     return Array.from(materialsMap.values())
   }, [])
 
-  const filteredPoints = useMemo(() => {
-    const query = filters.searchQuery?.toLowerCase().trim() ?? ''
-
+  const filteredPoints = useMemo(
+    () => filterCollectionPoints(COLLECTION_POINTS_MOCK, filters),
+    [filters]
+  )
     return COLLECTION_POINTS_MOCK.filter((point: CollectionPoint) => {
       if (point.status !== 'active') return false
 
