@@ -6,9 +6,9 @@
 - **Número:** 5
 - **Data de entrega:** 26/10/2026
 - **Pontuação:** 2,5 pontos
-- **Tag:** `sprint-05`
+- **Tag:** [Sprint-05](https://github.com/lucasensousa/coleta-mais/blob/main/docs/sprints/sprint-05.md)
 - **GitHub Project:** https://github.com/users/lucasensousa/projects/2
-- **Aplicação publicada:** preencher se houver
+
 
 ## 2. Objetivo específico
 
@@ -66,6 +66,6 @@ Apresentar diagrama sem código correspondente.
 
 ## 10. Links enviados no UFLA Virtual
 
-**Tag sprint-05:** [COLAR LINK]
-**Este arquivo na tag:** [COLAR LINK]
-**Observação adicional:** Nenhuma.
+**Tag sprint-05:** [Sprint-05](https://github.com/lucasensousa/coleta-mais/releases/tag/sprint-05)
+**Este arquivo na tag:** [Sprint-05](https://github.com/lucasensousa/coleta-mais/blob/main/docs/sprints/sprint-05.md)
+**Observação adicional:** 
