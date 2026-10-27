@@ -50,6 +50,36 @@ As decisões estão relacionadas à evolução da interface de HTML, CSS e JavaS
 - **Requisitos relacionados:** RF-01 e RF-02; [Issue #1](https://github.com/lucasensousa/coleta-mais/issues/1) e [Issue #2](https://github.com/lucasensousa/coleta-mais/issues/2).
 - **Evidência de histórico:** [Histórico de commits da branch main](https://github.com/lucasensousa/coleta-mais/commits/main).
 
+### DP-04 — Aplicação do padrão Strategy à filtragem
+
+- **Contexto/problema:** Na página de consulta, os critérios de filtragem por status, texto pesquisado e material estavam concentrados no mesmo trecho de código. Essa organização dificulta a evolução independente das regras.
+
+- **Alternativas consideradas:**
+  1. Manter todas as condições na página de consulta.
+  2. Extrair a lógica para uma única função de filtragem.
+  3. Aplicar o padrão Strategy, separando os critérios em estratégias independentes.
+
+- **Decisão:** Adotar o padrão Strategy para separar os critérios de filtragem dos pontos de coleta, mantendo uma interface comum para as estratégias e uma função responsável por coordenar sua aplicação.
+
+- **Justificativa:** A separação permite alterar ou adicionar critérios de filtragem sem concentrar todas as condições na página React, favorecendo a organização e a manutenção do código.
+
+- **Consequências positivas esperadas:** Maior separação de responsabilidades, regras de filtragem mais coesas e facilidade para ampliar os critérios de consulta.
+
+- **Custos e limitações:** O padrão acrescenta interfaces e classes ao projeto. Como os critérios atuais são simples, a implementação deve evitar abstrações desnecessárias.
+
+- **Código relacionado:**
+  - `frontend/src/routes/pontos/index.tsx`
+  - `frontend/src/strategies/collectionPointFilterStrategies.ts`
+
+- **Requisitos relacionados:** RF-01 e RF-02.
+
+- **Issues relacionadas:**
+  - [#41 — T-07: Aplicar Strategy à filtragem](https://github.com/lucasensousa/coleta-mais/issues/41)
+  - [#42 — D-08: Documentar o padrão Strategy](https://github.com/lucasensousa/coleta-mais/issues/42)
+  - [#43 — D-09: Atualizar documentação e evidências](https://github.com/lucasensousa/coleta-mais/issues/43)
+
+- **Situação:** Decisão registrada para a Sprint 5.
+
 ## 3. Antes e depois
 
 | Aspecto | Antes | Depois | Benefício observado |

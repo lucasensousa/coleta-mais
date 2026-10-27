@@ -8,7 +8,7 @@ https://github.com/users/lucasensousa/projects/2
 
 > O GitHub Project é utilizado como fonte operacional do backlog. As Issues representam os itens de trabalho e são utilizadas para acompanhar prioridade, responsável, sprint e status.
 
-**Última atualização:** 14/10/2026 — Sprint 4
+**Última atualização:** 26/10/2026 — Sprint 5
 
 ## 2. Campos obrigatórios no Project
 
@@ -74,6 +74,9 @@ As funcionalidades destinadas ao usuário final foram mantidas no Product Backlo
 | `T-06`| [#37](https://github.com/lucasensousa/coleta-mais/issues/37) | Tarefa-Técnica | Refatorar o frontend e separar responsabilidades | Alta | Não aplicável | 4 | Concluido |
 | `D-06`| [#38](https://github.com/lucasensousa/coleta-mais/issues/38) | Documentação | Atualizar a documentação e a rastreabilidade da sprint 04 | Alta | Não aplicável | 4 | Concluido |
 | `D-07` | [#39](https://github.com/lucasensousa/coleta-mais/issues/39) | Documentação | Atualizar a modelagem para refletir a implementação atual em React/TypeScript | Alta | `RF-01` a `RF-05`; `RF-07` a `RF-12` | 4 | Concluido |
+| `T-07` | [#41](https://github.com/lucasensousa/coleta-mais/issues/41) | Tarefa técnica | Aplicar Strategy à filtragem dos pontos de coleta | Alta | `RF-01`, `RF-02` | 5 | Concluido |
+| `D-08` | [#42](https://github.com/lucasensousa/coleta-mais/issues/42) | Documentação | Documentar o padrão de projeto Strategy | Alta | Não aplicável | 5 | Concluido |
+| `D-09` | [#43](https://github.com/lucasensousa/coleta-mais/issues/43) | Documentação | Atualizar documentação e evidências da Sprint 5 | Alta | `RF-01`, `RF-02` | 5 | Concluido |
 
 ## 5. Definition of Ready
 
@@ -113,3 +116,4 @@ Um item está concluído quando:
 | Sprint 2 | Inclusão dos `RNF-01` a `RNF-06` | Registrar requisitos não funcionais relacionados à qualidade e às restrições da aplicação | `docs/requisitos/requisitos.md` e Issues `#23` a `#28` |
 | Sprint 3 | Inclusão das tarefas `T-03`, `T-04`, `T-05` e documentação `D-04` | Registrar as atividades de modelagem, evolução da implementação e rastreabilidade identificadas para a Sprint 3 | Issues `#31` a `#34` e GitHub Project |
 | Sprint 4 | inclusão da tarefa T-06 e documentação D-05 e D-06 e D-07 | Registrar as decisões locais de projeto, formalizar a refatoração do frontend e atualizar a documentação para refletir a implementação atual, promovendo a separação de responsabilidades, a modularidade e a rastreabilidade das alterações realizadas. | Issues `#36` a `#39` e GitHub Project|
+| Sprint 5 | Inclusão da tarefa `T-07` e das documentações `D-08` e `D-09` | Separar os critérios de filtragem por meio do padrão Strategy, documentar o problema real, as alternativas e consequências, e atualizar os modelos e registros da sprint. Os critérios de status, pesquisa textual e material foram escolhidos por já estarem concentrados na página de consulta. | [Issue #41 — T-07](https://github.com/lucasensousa/coleta-mais/issues/41), [Issue #42 — D-08](https://github.com/lucasensousa/coleta-mais/issues/42), [Issue #43 — D-09](https://github.com/lucasensousa/coleta-mais/issues/43) e GitHub Project |

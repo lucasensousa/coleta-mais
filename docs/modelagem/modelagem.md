@@ -1,8 +1,9 @@
 # Modelagem do sistema
 
-> **Artefato central da Sprint 3, atualizado na Sprint 4 para refletir a implementação atual do Coleta+.**
+> **Artefato central da Sprint 3, atualizado nas Sprints 4 e 5 para refletir a evolução do Coleta+.**
 >
-> **Nota de atualização:** a versão inicial da modelagem descrevia uma interface estática em HTML, CSS e JavaScript. O frontend atual foi reorganizado em React e TypeScript. Por isso, o fluxo comportamental e a correspondência entre modelo e código foram atualizados para apontar para a rota, os componentes, os dados de demonstração e os tipos atualmente utilizados. O modelo de domínio continua conceitual e não significa que todas as funcionalidades administrativas já estejam implementadas.
+> **Nota de atualização:** a versão inicial da modelagem descrevia uma interface estática em HTML, CSS e JavaScript. O frontend atual foi reorganizado em React e TypeScript. Por isso, o fluxo comportamental e a correspondência entre modelo e código foram atualizados para apontar para a rota, os componentes, os dados de demonstração e os tipos atualmente utilizados. O modelo de domínio continua conceitual e não significa que todas as funcionalidades administrativas já estejam implementadas. Na Sprint 5, a modelagem também foi complementada para representar a separação dos critérios de filtragem por meio do padrão Strategy.
+
 
 ## 1. Modelos selecionados
 
@@ -10,6 +11,7 @@
 |---|---|---|---|
 | Fluxo de consulta e filtragem dos pontos de coleta | Comportamental | Como o usuário abre a página de pontos, consulta as informações e utiliza a pesquisa e os filtros disponíveis? | RF-01, RF-02, RF-03, RF-04, RF-05 |
 | Modelo de domínio dos pontos de coleta | Estrutural | Quais são os principais conceitos do domínio e como pontos de coleta, materiais, horários e condições de entrega se relacionam? | RF-01, RF-02, RF-03, RF-04, RF-05, RF-07, RF-08, RF-09, RF-10, RF-11, RF-12 |
+
 
 ## 2. Modelo comportamental em Mermaid
 
@@ -19,26 +21,42 @@ sequenceDiagram
     participant Interface as Interface React
     participant Pagina as Rota /pontos/
     participant Dados as COLLECTION_POINTS_MOCK
+    participant Filtro as filterCollectionPoints
     participant Cartao as CollectionPointCard
 
     Usuario->>Interface: Acessa a aplicação
-    Interface-->>Usuario: Apresenta as opções de navegação
-    Usuario->>Interface: Escolhe consultar pontos de coleta
+    Interface-->>Usuario: Apresenta opções de navegação
+    Usuario->>Interface: Seleciona pontos de coleta
     Interface->>Pagina: Navega para /pontos/
-    Pagina->>Dados: Lê a lista de pontos de demonstração
-    Dados-->>Pagina: Retorna os dados dos pontos
-    Pagina->>Pagina: Considera os pontos ativos
-    Usuario->>Pagina: Informa pesquisa ou seleciona material
-    Pagina->>Pagina: Aplica pesquisa e filtro por material
-    loop Para cada ponto correspondente
-        Pagina->>Cartao: Fornece os dados do ponto
-        Cartao-->>Usuario: Exibe as informações do ponto
+
+    Pagina->>Dados: Obtém os pontos de demonstração
+    Dados-->>Pagina: Retorna a lista de pontos
+
+    Usuario->>Pagina: Informa texto ou seleciona material
+    Pagina->>Filtro: filterCollectionPoints(pontos, filtros)
+
+    Note over Filtro: ActivePointStrategy verifica o status
+    Note over Filtro: TextSearchStrategy verifica nome e endereço
+    Note over Filtro: MaterialFilterStrategy verifica materiais aceitos
+    Note over Filtro: As estratégias são aplicadas em conjunto
+
+    Filtro-->>Pagina: Retorna os pontos que atendem aos filtros
+
+    alt Existem pontos correspondentes
+        loop Para cada ponto retornado
+            Pagina->>Cartao: Fornece os dados do ponto
+            Cartao-->>Usuario: Apresenta informações do ponto
+        end
+    else Nenhum ponto correspondente
+        Pagina-->>Usuario: Apresenta mensagem de lista vazia
     end
 ```
 
-**Descrição e decisões representadas:** o modelo comportamental representa o fluxo de consulta disponibilizado pelo frontend atual. O usuário acessa a interface e navega para a rota `/pontos/`. Essa página utiliza a lista de demonstração `COLLECTION_POINTS_MOCK`, considera os pontos ativos e permite pesquisar e filtrar os resultados por material. Os resultados são apresentados por meio do componente reutilizável `CollectionPointCard`.
 
-O diagrama representa o comportamento observado na implementação React e TypeScript. Ele **não representa uma chamada a uma API nem uma consulta a banco de dados**: os dados usados nesse fluxo são dados de demonstração mantidos no frontend. O modelo poderá ser atualizado quando a origem dos dados for integrada a um serviço ou backend.
+**Descrição e decisões representadas:** o usuário acessa a aplicação React e navega para a rota `/pontos/`. A página obtém os pontos de demonstração de `COLLECTION_POINTS_MOCK` e utiliza `filterCollectionPoints` para coordenar a filtragem. O módulo aplica as estratégias de status, pesquisa textual e material. Os resultados são apresentados pelo componente reutilizável `CollectionPointCard`; quando nenhum ponto atende aos filtros, a interface apresenta a mensagem de lista vazia.
+A estrutura interna do padrão Strategy, incluindo a interface e as estratégias concretas, está documentada em [docs/padroes/padroes-de-projeto.md](../padroes/padroes-de-projeto.md).
+
+**Limite da representação:** os dados utilizados neste fluxo são mantidos no frontend. O diagrama não representa uma chamada a uma API nem uma consulta ao banco de dados. As estratégias identificadas correspondem à organização prevista no módulo de filtragem e devem permanecer consistentes com o código integrado.
 
 ## 3. Modelo estrutural em Mermaid
 
@@ -89,12 +107,14 @@ classDiagram
 
 O modelo é de domínio, não um diagrama literal das classes TypeScript. Ele descreve conceitos e relacionamentos sem afirmar que cada conceito corresponda a uma classe independente no código ou a uma tabela de banco de dados.
 
+
+
 ## 4. Relação entre requisitos e modelos
 
 | Requisito | Elemento do modelo | Como está representado | Situação na implementação atual / rastreabilidade |
 |---|---|---|---|
-| RF-01 | Usuario / PontoColeta | Usuário consulta a lista de pontos de coleta disponíveis | Fluxo da rota de pontos e apresentação dos resultados; Issues [#31](https://github.com/lucasensousa/coleta-mais/issues/31), [#33](https://github.com/lucasensousa/coleta-mais/issues/33) e [#37](https://github.com/lucasensousa/coleta-mais/issues/37) |
-| RF-02 | Material | Materiais aceitos são associados a cada ponto e podem ser utilizados no filtro | Dados e filtro por material no frontend; Issues [#32](https://github.com/lucasensousa/coleta-mais/issues/32), [#33](https://github.com/lucasensousa/coleta-mais/issues/33) e [#37](https://github.com/lucasensousa/coleta-mais/issues/37) |
+| RF-01 | Usuario / PontoColeta; ActivePointStrategy; TextSearchStrategy | O usuário consulta pontos de coleta ativos e pode pesquisar pelo nome ou endereço. | Fluxo da rota de consulta e módulo de filtragem; [Issue #41](https://github.com/lucasensousa/coleta-mais/issues/41). |
+| RF-02 | Material; MaterialFilterStrategy | Os materiais aceitos são associados aos pontos e permitem filtrar os resultados da consulta. | Dados e filtro por material no frontend; [Issue #41](https://github.com/lucasensousa/coleta-mais/issues/41). |
 | RF-03 | Horario | Horários são representados como informações associadas ao ponto | Horários são lidos dos dados de demonstração e apresentados no componente `CollectionPointCard`. |
 | RF-04 | CondicaoEntrega | Condições de entrega são representadas como informações associadas ao ponto | Condições são lidas dos dados de demonstração e apresentadas no componente `CollectionPointCard`. |
 | RF-05 | PontoColeta | A identificação e a localização são informações do ponto de coleta | O cartão exibe endereço, bairro quando disponível, cidade e estado. |
@@ -119,6 +139,7 @@ O modelo é de domínio, não um diagrama literal das classes TypeScript. Ele de
 | Material | Dados do ponto, tipo TypeScript e filtro da página | Representa os materiais associados aos pontos e utilizados na consulta. |
 | Horario e CondicaoEntrega | [`CollectionPointCard.tsx`](../../frontend/src/components/pontos/CollectionPointCard.tsx) e [`collectionPointsMock.ts`](../../frontend/src/data/collectionPointsMock.ts) | Horários e condições são fornecidos pelos dados de demonstração e exibidos no cartão. |
 | Administrador | [`docs/requisitos/requisitos.md`](../requisitos/requisitos.md) | O perfil e suas responsabilidades são previstos nos requisitos. Esta referência documental não comprova, por si só, a existência de uma interface administrativa implementada. |
+| Padrão Strategy | [docs/padroes/padroes-de-projeto.md](../padroes/padroes-de-projeto.md) | Documenta a interface e as estratégias de filtragem relacionadas aos requisitos RF-01 e RF-02. |
 
 ## 6. Refinamentos identificados
 
@@ -128,6 +149,7 @@ O modelo é de domínio, não um diagrama literal das classes TypeScript. Ele de
 - **Limite dos dados:** o uso de `COLLECTION_POINTS_MOCK` foi registrado explicitamente. O fluxo documentado não presume comunicação com API ou banco de dados.
 - **Domínio administrativo:** as responsabilidades do administrador foram mantidas no modelo conceitual por estarem relacionadas aos requisitos, mas foram diferenciadas da funcionalidade pública de consulta representada no código atual.
 - **Coerência documental:** os caminhos antigos `src/index.html`, `src/pontos.html` e `src/pontos.js` foram substituídos pelos caminhos do frontend React/TypeScript atual.
+- **Padrão Strategy:** a Sprint 5 complementa a modelagem com a separação dos critérios de filtragem por status, texto e material, relacionando a alteração aos requisitos RF-01 e RF-02 e preservando o modelo de domínio original.
 
 ## 7. Histórico de atualização
 
@@ -139,3 +161,4 @@ O modelo é de domínio, não um diagrama literal das classes TypeScript. Ele de
 | Sprint 3 | Documentação da modelagem e rastreabilidade | Registrar os modelos, relacionamentos e evidências da sprint | [Issue #34](https://github.com/lucasensousa/coleta-mais/issues/34) |
 | Sprint 4 | Atualização da correspondência entre modelo e código | Refletir a migração da interface estática para React/TypeScript e documentar os módulos atuais, sem afirmar integração de dados que não está demonstrada | [Issue #37 — T-06](https://github.com/lucasensousa/coleta-mais/issues/37) e [Issue #38 — D-06](https://github.com/lucasensousa/coleta-mais/issues/38) |
 | Sprint 4 | Modelos comportamental e estrutural e correspondência com o código | Atualizar a documentação após a migração do frontend para React/TypeScript, distinguindo comportamentos implementados de funcionalidades apenas previstas | [Issue #39](https://github.com/lucasensousa/coleta-mais/issues/39) |
+| Sprint 5 | Modelagem comportamental e estrutural de projeto | Documentar o padrão Strategy aplicado à filtragem e sua relação com RF-01 e RF-02. | Issues [#41](https://github.com/lucasensousa/coleta-mais/issues/41), [#42](https://github.com/lucasensousa/coleta-mais/issues/42) e [#43](https://github.com/lucasensousa/coleta-mais/issues/43) |

@@ -63,10 +63,10 @@ Na página inicial, acessar a opção "Encontrar pontos de coleta" e verificar a
 
 | Issue | Descrição | Responsável | Critério de aceitação/conclusão | Situação |
 |---|---|---|---|---|
-| #31 | Criar modelo comportamental do fluxo de consulta | @lucasensousa | Modelo comportamental criado, documentado e relacionado aos requisitos do fluxo de consulta | Pendente |
-| #32 | Criar modelo estrutural do domínio | @lucasensousa | Modelo estrutural criado e documentado, representando os principais elementos do domínio | Pendente |
-| #33 | Evoluir fluxo de consulta conforme modelo | @lucasensousa | Implementação evoluída de acordo com os modelos definidos e correspondente ao fluxo documentado | Pendente |
-| #34 | Documentar modelagem e rastreabilidade | @lucasensousa | modelagem.md e rastreabilidade atualizados e relacionados aos requisitos e Issues da sprint | Pendente |
+| #31 | Criar modelo comportamental do fluxo de consulta | @lucasensousa | Modelo comportamental criado, documentado e relacionado aos requisitos do fluxo de consulta | Concluido |
+| #32 | Criar modelo estrutural do domínio | @lucasensousa | Modelo estrutural criado e documentado, representando os principais elementos do domínio | Concluido |
+| #33 | Evoluir fluxo de consulta conforme modelo | @lucasensousa | Implementação evoluída de acordo com os modelos definidos e correspondente ao fluxo documentado | Concluido |
+| #34 | Documentar modelagem e rastreabilidade | @lucasensousa | modelagem.md e rastreabilidade atualizados e relacionados aos requisitos e Issues da sprint | Concluido |
 
 ### Acompanhamento
 
